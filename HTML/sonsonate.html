@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Sonsonate</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/playa-los-cobanos.jpg" alt="Playa Los Cobanos" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">Sonsonate</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Playa Los Cobanos</h1>
+                        <p id="site-description">Única zona de arrecifes coralinos en El Salvador y la costa Pacífico de Centroamérica. Ideal para el buceo, snorkeling y observación de tortugas marinas y ballenas (en temporada).</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Playa Los Cobanos"
+                        data-description="Única zona de arrecifes coralinos en El Salvador y la costa Pacífico de Centroamérica. Ideal para el buceo, snorkeling y observación de tortugas marinas y ballenas (en temporada)."
+                        data-image="https://live.staticflickr.com/5249/5286539558_7461fe30f7_b.jpg"
+                        data-link="https://elsalvadortravel.com/playa-los-cobanos/">
+                        <span class="item-number">01</span>
+                        <img src="https://live.staticflickr.com/5249/5286539558_7461fe30f7_b.jpg" alt="Playa Los Cobanos thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Playa Los Cobanos</div>
+                            <div class="item-duration">Arrecifes y Buceo</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Nahuizalco y su Mercado Nocturno"
+                        data-description="Parte de la Ruta de las Flores. Famoso por su herencia indígena, sus talleres de artesanía en mimbre y tule, y su único mercado nocturno iluminado con velas y candiles."
+                        data-image="https://elsalvadoresbello.com/wp-content/uploads/2019/01/mecadito-nocturno-2-1024x576.jpg"
+                        data-link="https://elsalvadortravel.com/nahuizalco/">
+                        <span class="item-number">02</span>
+                        <img src="https://elsalvadoresbello.com/wp-content/uploads/2019/01/mecadito-nocturno-2-1024x576.jpg" alt="Nahuizalco thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Nahuizalco</div>
+                            <div class="item-duration">Cultura y Artesanía</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Juayúa y su Feria Gastronómica"
+                        data-description="Un pintoresco pueblo conocido por ser la sede de la famosa Feria Gastronómica de fin de semana, donde se puede degustar una gran variedad de platillos típicos e internacionales."
+                        data-image="https://everythingelsalvador.com/wp-content/uploads/2021/09/Juayua-Food-Festival-Feria-Gastronomica-El-Salvador-1250x833.jpg"
+                        data-link="https://elsalvadortravel.com/juayua/">
+                        <span class="item-number">03</span>
+                        <img src="https://everythingelsalvador.com/wp-content/uploads/2021/09/Juayua-Food-Festival-Feria-Gastronomica-El-Salvador-1250x833.jpg" alt="Juayúa thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Juayúa (Ruta de las Flores)</div>
+                            <div class="item-duration">Gastronomía y Naturaleza</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Playa El Zonte (Bitcoin Beach)"
+                        data-description="Un destino de surf en crecimiento mundialmente famoso por ser el experimento inicial de 'Bitcoin Beach'. Combina surf, ambiente relajado y la cultura de la criptomoneda."
+                        data-image="https://www.heraldobinario.com.mx/u/fotografias/m/2021/6/30/f1280x720-2100_133775_5050.jpg"
+                        data-link="https://elsalvadortravel.com/playa-el-zonte/">
+                        <span class="item-number">04</span>
+                        <img src="https://www.heraldobinario.com.mx/u/fotografias/m/2021/6/30/f1280x720-2100_133775_5050.jpg" alt="El Zonte thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Playa El Zonte</div>
+                            <div class="item-duration">Surf y Bitcoin</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Termales de Santa Teresa"
+                        data-description="Un balneario que aprovecha las aguas termales de origen volcánico. Ofrece piscinas con propiedades curativas, saunas naturales y un ambiente perfecto para la relajación y el bienestar."
+                        data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/3c/d1/4e/another-view-of-the-yellow.jpg?w=1800&h=-1&s=1"
+                        data-link="https://termalesdesantateresa.com/">
+                        <span class="item-number">05</span>
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/3c/d1/4e/another-view-of-the-yellow.jpg?w=1800&h=-1&s=1">
+                        <div class="item-text">
+                            <div class="item-title">Termales de Santa Teresa</div>
+                            <div class="item-duration">Relax y Bienestar</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Parque Nacional El Imposible"
+                        data-description="Una de las áreas naturales protegidas más importantes de El Salvador, con bosques densos, ríos y una rica biodiversidad. Ideal para el senderismo extremo y la observación de aves."
+                        data-image="https://i2.wp.com/salvadoreantours.com/wp-content/uploads/2019/09/Bosque-El-Imposible-2-1.jpg?w=1500&ssl=1"
+                        data-link="https://elsalvadortravel.com/parque-nacional-el-imposible/">
+                        <span class="item-number">06</span>
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.6uXzXttkXzDN6BiWZpx5mwHaFI?rs=1&pid=ImgDetMain&o=7&rm=3">
+                        <div class="item-text">
+                            <div class="item-title">El Imposible</div>
+                            <div class="item-duration">Ecoturismo Avanzado</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/sonsonate-contactos.js"></script>
+</body>
+</html>

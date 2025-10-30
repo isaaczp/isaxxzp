@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Ahuachapán</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+
+</div>   
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/ausoles-ahuachapan.jpg" alt="Ausoles de Ahuachapán" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">Ahuachapán</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Los Ausoles (Campo Geotérmico)</h1>
+                        <p id="site-description">Una impresionante zona de actividad volcánica donde el vapor y el agua hirviendo escapan de la tierra. Es la fuente principal de la energía geotérmica de El Salvador, creando un paisaje único y vaporoso.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Los Ausoles (Campo Geotérmico)"
+                        data-description="Una impresionante zona de actividad volcánica donde el vapor y el agua hirviendo escapan de la tierra. Es la fuente principal de la energía geotérmica de El Salvador, creando un paisaje único y vaporoso."
+                        data-image="https://elsalvadorviajar.com/wp-content/uploads/2022/07/Los-Ausoles-de-Ahuachapan-768x512.jpg"
+                        data-link="https://elsalvadortravel.com/ausoles-de-ahuachapan/">
+                        <span class="item-number">01</span>
+                        <img src="https://elsalvadorviajar.com/wp-content/uploads/2022/07/Los-Ausoles-de-Ahuachapan-768x512.jpg" alt="Ausoles de Ahuachapán thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Los Ausoles</div>
+                            <div class="item-duration">Geotermia y Vapor</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Cascadas de Malacatao"
+                        data-description="Series de caídas de agua naturales que forman piscinas de aguas frescas en un entorno rural y tranquilo. Ideal para un día de campo y nadar en la naturaleza."
+                        data-image="https://elsalvadorviajar.com/en/wp-content/uploads/2022/11/SALTO-DE-MALACATIUPAN-Cascadas-de-El-Salvador-1-1.jpg"
+                        data-link="https://elsalvadortravel.com/cascadas-de-malacatao/">
+                        <span class="item-number">02</span>
+                        <img src="https://elsalvadorviajar.com/en/wp-content/uploads/2022/11/SALTO-DE-MALACATIUPAN-Cascadas-de-El-Salvador-1-1.jpg" alt="Cascadas de Malacatao thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Cascadas de Malacatao</div>
+                            <div class="item-duration">Piscinas Naturales</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Concepción de Ataco"
+                        data-description="Un encantador pueblo en la Ruta de las Flores, famoso por sus coloridos murales artísticos, calles empedradas y clima fresco. Ofrece excelentes opciones de café y gastronomía artesanal."
+                        data-image="https://i.pinimg.com/originals/30/1d/46/301d463bcf1dd534baf36a9923a7adbe.jpg"
+                        data-link="https://elsalvadortravel.com/concepcion-de-ataco/">
+                        <span class="item-number">03</span>
+                        <img src="https://i.pinimg.com/originals/30/1d/46/301d463bcf1dd534baf36a9923a7adbe.jpg" alt="Ataco thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Ataco</div>
+                            <div class="item-duration">Murales y Café</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Centro Histórico de Ahuachapán"
+                        data-description="La cabecera departamental, con una arquitectura tradicional, destaca por la Iglesia de Nuestra Señora de la Asunción y su tranquilo parque central, conservando un aire colonial."
+                        data-image="https://diarioelsalvador.com/wp-content/uploads/2024/01/fdep30012024jbremodelacionparqueApaneca02-1024x637.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Ahuachap%C3%A1n_(ciudad)">
+                        <span class="item-number">04</span>
+                        <img src="https://diarioelsalvador.com/wp-content/uploads/2024/01/fdep30012024jbremodelacionparqueApaneca02-1024x637.jpg" alt="Ahuachapán Centro thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Ahuachapán Ciudad</div>
+                            <div class="item-duration">Historia Local</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Termales de Albania"
+                        data-description="Un parque recreativo que utiliza las aguas termales geotérmicas. Ofrece baños de lodo y piscinas climatizadas, además de actividades de aventura como el laberinto de ciprés más grande de C.A."
+                        data-image="https://cf.bstatic.com/xdata/images/hotel/max1024x768/537834406.jpg?k=9c79db0978459c690ff65fb55ef023b90e1bb349beac5da20a2adc2b804477dc&o=&hp=1"
+                        data-link="https://www.termalesdealbania.com/">
+                        <span class="item-number">05</span>
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/537834406.jpg?k=9c79db0978459c690ff65fb55ef023b90e1bb349beac5da20a2adc2b804477dc&o=&hp=1" alt="Termales de Albania thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Termales de Albania</div>
+                            <div class="item-duration">Spa y Laberinto</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Chorros de la Calera"
+                        data-description="Un conjunto de cascadas y pozas de agua caliente y fría cerca de Apaneca. Las aguas provienen de fuentes geotermales, ofreciendo un baño natural único y una belleza paisajística."
+                        data-image="https://serturista.com/wp-content/uploads/2009/11/el-salvador-chorros-de-la-calera-2.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Apaneca">
+                        <span class="item-number">06</span>
+                        <img src="https://serturista.com/wp-content/uploads/2009/11/el-salvador-chorros-de-la-calera-2.jpg" alt="Chorros de la Calera thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Chorros de la Calera</div>
+                            <div class="item-duration">Aguas Termales</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/ahuachapan-contactos.js"></script>
+</body>
+</html>

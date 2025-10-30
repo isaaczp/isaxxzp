@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo San Vicente</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/volcan-de-san-vicente.jpg" alt="Volcán de San Vicente" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">San Vicente</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Volcán de San Vicente (Chinchontepec)</h1>
+                        <p id="site-description">Uno de los volcanes más activos y conocidos, con dos picos prominentes. Famoso por sus faldas fértiles y las aguas termales que brotan de sus alrededores, como los Infiernillos.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Volcán de San Vicente (Chinchontepec)"
+                        data-description="Uno de los volcanes más activos y conocidos, con dos picos prominentes. Famoso por sus faldas fértiles y las aguas termales que brotan de sus alrededores, como los Infiernillos."
+                        data-image="https://elsalvador.travel/system/wp-content/uploads/2020/01/Volcan-Chinchontepeq-scaled.jpg"
+                        data-link="https://elsalvadortravel.com/volcan-de-san-vicente/">
+                        <span class="item-number">01</span>
+                        <img src="https://elsalvador.travel/system/wp-content/uploads/2020/01/Volcan-Chinchontepeq-scaled.jpg" alt="Volcán de San Vicente thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Volcán de San Vicente</div>
+                            <div class="item-duration">Naturaleza y Termales</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Parque Acuático Amapulapa"
+                        data-description="Un balneario muy popular en la región central, conocido por sus piscinas alimentadas por aguas volcánicas frescas y sus amplias áreas verdes. Ideal para el turismo familiar y recreativo."
+                        data-image="https://th.bing.com/th/id/R.dd733922b3a4ece89744448d1a70b501?rik=%2fXgu9Yvq7Ubquw&pid=ImgRaw&r=0https://th.bing.com/th/id/R.dd733922b3a4ece89744448d1a70b501?rik=%2fXgu9Yvq7Ubquw&pid=ImgRaw&r=0"
+                        data-link="https://es.wikipedia.org/wiki/Amapulapa">
+                        <span class="item-number">02</span>
+                        <img src="https://th.bing.com/th/id/R.dd733922b3a4ece89744448d1a70b501?rik=%2fXgu9Yvq7Ubquw&pid=ImgRaw&r=0" alt="Amapulapa thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Amapulapa</div>
+                            <div class="item-duration">Piscinas Naturales</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Iglesia El Pilar"
+                        data-description="Una de las iglesias más antiguas y un símbolo de la ciudad de San Vicente. Su arquitectura colonial es de gran valor histórico, habiendo sido reconstruida varias veces tras sismos."
+                        data-image="https://imgs.search.brave.com/Qt1lCISsS4vO4l807O_sJEYEEhDuUcwhdYOm3zcyhJY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmlzaXRhcnNldmls/bGEuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE0LzAyL0ln/bGVzaWEtZGUtU2Fu/LVZpY2VudGUtU2V2/aWxsYS5qcGc"
+                        data-link="https://es.wikipedia.org/wiki/San_Vicente_(El_Salvador)">
+                        <span class="item-number">03</span>
+                        <img src="https://imgs.search.brave.com/Qt1lCISsS4vO4l807O_sJEYEEhDuUcwhdYOm3zcyhJY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmlzaXRhcnNldmls/bGEuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE0LzAyL0ln/bGVzaWEtZGUtU2Fu/LVZpY2VudGUtU2V2/aWxsYS5qcGc" alt="Iglesia El Pilar thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Iglesia El Pilar</div>
+                            <div class="item-duration">Arquitectura Colonial</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Salto del Chihuahua"
+                        data-description="Impresionante cascada rodeada de vegetación. Es un destino menos conocido que ofrece tranquilidad y la belleza de un salto de agua natural, ideal para el ecoturismo."
+                        data-image="https://imgs.search.brave.com/ItIlAOBW9voLxa_mLAI5EPlI3xAFCQh1QeOmTndqkqM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2FuYWwxMm1pc2lv/bmVzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8xMi9z/YWx0by1iZWxsYS12/aXN0YS1zYW4tdmlj/ZW50ZS0zLTEtMTAy/NHg3NzkuanBn"
+                        data-link="https://es.wikipedia.org/wiki/San_Vicente_(El_Salvador)">
+                        <span class="item-number">04</span>
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.gXDzFkmGosyNmcCZChQ3DQHaE5?w=1024&h=678&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Salto del Chihuahua thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Salto del Chihuahua</div>
+                            <div class="item-duration">Naturaleza Secreta</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Puente de Oro (Referencia Histórica)"
+                        data-description="Antiguo puente sobre el Río Lempa, hoy en día referencia histórica y ruta de conexión vital. Es un hito de la ingeniería y un punto de interés paisajístico en la carretera Panamericana."
+                        data-image="https://imgs.search.brave.com/fupdug62ujH2AXNWwkOygEDIrRIO64O9jvE7HSrwM4U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8w/Ni8xMy8xMS8yMi9n/b2xkZW4tZ2F0ZS1i/cmlkZ2UtNDI3MTM2/NF82NDAuanBn"
+                        data-link="https://es.wikipedia.org/wiki/Puente_de_Oro">
+                        <span class="item-number">05</span>
+                        <img src="https://imgs.search.brave.com/fupdug62ujH2AXNWwkOygEDIrRIO64O9jvE7HSrwM4U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8w/Ni8xMy8xMS8yMi9n/b2xkZW4tZ2F0ZS1i/cmlkZ2UtNDI3MTM2/NF82NDAuanBn" alt="Puente de Oro thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Puente de Oro</div>
+                            <div class="item-duration">Hito Vial</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Catedral de San Vicente"
+                        data-description="La iglesia principal de la cabecera departamental, con una arquitectura neoclásica. Su parque central adyacente es el centro de la vida social y cultural de la ciudad."
+                        data-image="https://imgs.search.brave.com/MF6QA1sWDWXZ6tuKSQOamCUJODSHnRmAMxnAUky_QJs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLW8v/MTcvNzEvNjEvMWUv/cG9ydGEtZGUtbGEt/Y2F0ZWRyYWwuanBn"
+                        data-link="https://es.wikipedia.org/wiki/San_Vicente_(El_Salvador)">
+                        <span class="item-number">06</span>
+                        <img src="https://imgs.search.brave.com/MF6QA1sWDWXZ6tuKSQOamCUJODSHnRmAMxnAUky_QJs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLW8v/MTcvNzEvNjEvMWUv/cG9ydGEtZGUtbGEt/Y2F0ZWRyYWwuanBn" alt="Catedral de San Vicente thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Catedral de San Vicente</div>
+                            <div class="item-duration">Centro de la Ciudad</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+
+   <script src="/JS/departamentos.js"></script>
+   <script src="/JS/sanvicente-contactos.js"></script>
+</body>
+</html>

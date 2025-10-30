@@ -1,0 +1,52 @@
+.mapa_SV {
+  width: 100%;
+  height: 100vh;
+}
+
+.titulo_mapa {
+  margin-top: 40PX;
+  border-radius: 20PX;
+  padding: 0.6em 0;
+  background-color: #00000077;
+  color: #fff;
+  text-align: center;
+  font-size: 2.3em;
+  text-shadow: 2px 2px 3px rgba(100, 100, 100, 0.8);
+}
+
+.img_mapaSV {
+  width: 80%;
+  display: block;
+  margin-left: 10% ;
+}
+
+/* === Estilo general de los departamentos === */
+.departamentos_SV {
+  stroke: #000;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* === Fondos de cada departamento === */
+.ahuachapan { fill: url(#img-ahuachapan); }
+.santaana { fill: url(#img-santaana); }
+.sonsonate { fill: url(#img-sonsonate); }
+.lalibertad { fill: url(#img-lalibertad); }
+.chalatenango { fill: url(#img-chalatenango); }
+.sansalvador { fill: url(#img-san-salvador); }
+.cuscatlan { fill: url(#img-cuscatlan); }
+.lapaz { fill: url(#img-la-paz); }
+.cabañas { fill: url(#img-cabañas); }
+.sanvicente { fill: url(#img-san-vicente); }
+.usulutan { fill: url(#img-usulutan); }
+.sanmiguel { fill: url(#img-san-miguel); }
+.morazan { fill: url(#img-morazan); }
+.launion { fill: url(#img-la-union); }
+
+.departamentos_SV:hover {
+  transform: scale(1.03);
+  opacity: 0.85;
+  stroke: #fff;
+  stroke-width: 4;
+}

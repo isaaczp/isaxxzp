@@ -1,0 +1,601 @@
+body {
+            font-family: Arial, sans-serif;
+           background-image: url('https://imgs.search.brave.com/68Tqs3dLp_pWJ4kKUQoJeXgncHebiRwVUkyvwo3ryHA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTEy/NDU0NjkxNC9waG90/by90aGUtY2l0eS1v/Zi1zYW4tc2FsdmFk/b3IuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWpwV2JfeEtU/WkRpUmhrSFBRVFZw/WnE1YXV5N2RwWUh6/VElaNW9naTFpeDg9');
+
+    /* 2. Evita que la imagen se repita */
+    background-repeat: no-repeat;
+
+    /* 3. Asegura que la imagen cubra toda la pantalla */
+    background-size: cover;
+
+    /* 4. Fija la imagen para que no se mueva al hacer scroll (opcional, pero recomendado) */
+    background-attachment: fixed;
+        }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 97%;
+  background: rgba(0, 6, 39, 0.432);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+
+.logo {
+  height: 80px;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 6px;
+  border: 2px solid  rgb(0, 6, 39);
+  background:  rgba(0, 6, 39, 0.548);
+  color: #000;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-container button {
+  background:  rgba(0, 6, 39, 0.795);
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+/* OFF-CANVAS MENU */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100%;
+  background:  rgba(0, 6, 39, 0.781);
+  color: #fff;
+  transition: left 0.4s ease;
+  z-index: 1500;
+  padding: 20px;
+}
+
+.offcanvas.open {
+  left: 0;
+}
+
+.offcanvas-content {
+  position: relative;
+  height: 100%;
+}
+
+.offcanvas-content h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.offcanvas-content ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.offcanvas-content ul li {
+    /* El LI puede tener estilos de margen o separación entre items */
+    margin-bottom: 5px; 
+}
+
+.offcanvas-content ul li a {
+    display: block;             
+    text-decoration: none;      
+    color: white;               
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.offcanvas-content ul li a:hover {
+    background: #e6e6ff;
+    color: #0057b7;
+    font-weight: bold;
+}
+
+/* --- ESTILOS PARA LOS BOTONES DE NAVEGACIÓN SUPERIORES --- */
+
+.top-navigation-buttons {
+    display: flex; /* Para que los botones se vean uno al lado del otro */
+    gap: 10px;    /* Espacio entre los botones */
+    margin-bottom: 20px; /* Espacio antes de que empiecen las zonas */
+    padding-bottom: 10px; /* Separación visual */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Línea divisoria */
+}
+
+.nav-btn {
+    flex-grow: 1; /* Para que ocupen el mismo ancho */
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 5px;
+    background: transparent; /* Fondo transparente para que sean diferentes a ReservarBtn */
+    color: white;
+    border: 1px solid white; /* Borde blanco para destacarlos */
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.9em;
+}
+
+.nav-btn:hover {
+    background: #e6e6ff; /* Mismo hover que tus enlaces */
+    color: #0057b7;
+}
+
+/* Asegurar que la lista de zonas tenga un margen adecuado después de los botones */
+#zoneMenu {
+    margin-top: 0; 
+}
+
+/* --- NUEVOS ESTILOS PARA EL MENÚ DESPLEGABLE (Accordion) --- */
+
+#zoneMenu {
+    padding: 0; /* Elimina el padding por defecto de la UL principal */
+}
+
+/* Estilo para el encabezado de la Zona (Botón de despliegue) */
+.dropdown-header {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.dropdown-header:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para la flecha de despliegue */
+.arrow {
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+/* Rotación de la flecha cuando el menú está abierto */
+.dropdown-header.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Contenido de los departamentos (inicialmente oculto) */
+.dropdown-content {
+    max-height: 0; /* Clave para el efecto de despliegue */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 5px 5px;
+}
+
+/* Estilos de los departamentos dentro del desplegable */
+.dropdown-content ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+
+.dropdown-content ul li a {
+    padding: 8px 12px; /* Ajuste para que se vea diferente al header */
+    color: #f0f0f0;
+    transition: background 0.3s, color 0.3s;
+    font-weight: normal;
+}
+
+.dropdown-content ul li a:hover {
+    background: #e6e6ffbd;
+    color: #0057b7;
+    font-weight: 600;
+}
+
+/* Asegura que el contenedor LI principal no interfiera con los estilos del desplegable */
+#zoneMenu > li {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#closeMenu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+#reservarBtn {
+  background:  rgba(0, 33, 219, 0.781);
+  color: #000;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#reservarBtn:hover {
+  background: #fff;
+}
+
+.form-card {
+margin-left: 320px;
+margin-top: 190px;
+            background-color: #b9b9b9b0;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 650px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .header-top h1 {
+            color: #333;
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        .sign-in a {
+            color: #0029b1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos del indicador de pasos (similar al de la imagen) */
+        .steps-indicator {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-item::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 100%;
+            width: 100%;
+            height: 2px;
+            background: #ddd;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+        .step-item:last-child::after {
+            display: none;
+        }
+
+        .step-number {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #ddd;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+
+        .step-name {
+            margin-top: 8px;
+            font-size: 0.85em;
+            color: #777;
+        }
+
+        /* Estilos para el paso activo y completado */
+        .step-item.active .step-number {
+            background-color: #1000a0;
+        }
+        .step-item.completed .step-number {
+            background-color: #4CAF50; /* Verde para completado */
+        }
+        .step-item.active .step-name {
+            color: #010042;
+            font-weight: bold;
+        }
+        .step-item.completed::after {
+            background: #4CAF50;
+        }
+
+        /* Contenido del formulario */
+        .form-content {
+            padding: 10px 0;
+        }
+
+        .form-step {
+            display: none;
+        }
+        .form-step.active {
+            display: block;
+        }
+
+        .form-section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #2f3dff;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        .button-group {
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-secondary {
+            background-color: #eee;
+            color: #555;
+            margin-right: 10px;
+        }
+
+        .btn-primary {
+            background-color: #01213b;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1c32ff;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Estilos para el campo de sugerencias de lugar */
+        .location-search-container {
+            position: relative;
+        }
+        .suggestions-box {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            max-height: 150px;
+            overflow-y: auto;
+            z-index: 10;
+        }
+        .suggestion-item {
+            padding: 10px 12px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .suggestion-item:hover {
+            background-color: #f1f1f1;
+        }
+        /* --- FOOTER MODERNO --- */
+.footer {
+  margin-top: 60px;
+  background: linear-gradient(180deg, #0033a0, #00246e);
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 400px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+}
+
+.footer-logo h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-logo p {
+  color: #cfd8ff;
+  font-size: 0.95rem;
+}
+
+.footer-enlaces {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-enlaces h3 {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.footer-enlaces ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-enlaces ul li {
+  margin-bottom: 8px;
+}
+
+.footer-enlaces a {
+  text-decoration: none;
+  color: #cfd8ff;
+  transition: color 0.3s ease;
+}
+
+.footer-enlaces a:hover {
+  color: #ffcc00;
+}
+
+.footer-contacto {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-contacto h3 {
+  font-size: 1.2rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.footer-contacto p {
+  margin: 8px 0;
+  color: #cfd8ff;
+  font-size: 0.95rem;
+}
+
+.footer-contacto i {
+  color: #ffcc00;
+  margin-right: 8px;
+}
+
+.redes-sociales {
+  margin-top: 15px;
+}
+
+.redes-sociales a {
+  color: white;
+  margin: 0 8px;
+  font-size: 1.4rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* Créditos inferiores */
+.footer-creditos {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #b8c9ff;
+}
+
+@media (max-width: 768px) {
+  .footer-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Santa Ana</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/divino-salvador-del-mundo-san-salvador.jpg" alt="Monumento al Salvador del Mundo" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">Santa Ana</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Volcán de Santa Ana</h1>
+                        <p id="site-description">El Volcán de Santa Ana, también conocido como Ilamatepec, es el volcán más alto de El Salvador. Su cráter alberga una laguna de color turquesa, ofreciendo vistas espectaculares del Lago de Coatepeque y el Océano Pacífico. Es un destino popular para el senderismo.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Volcán de Santa Ana"
+                        data-description="El Volcán de Santa Ana, también conocido como Ilamatepec, es el volcán más alto de El Salvador. Su cráter alberga una laguna de color turquesa, ofreciendo vistas espectaculares del Lago de Coatepeque y el Océano Pacífico. Es un destino popular para el senderismo."
+                        data-image="https://salvadoreantours.com/wp-content/uploads/2019/09/Vista-del-volc%C3%A1n-ilamatepec-Santa-Ana-1-e1568940865971.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Volc%C3%A1n_de_Santa_Ana_(El_Salvador)">
+                        <span class="item-number">01</span>
+                        <img src="https://salvadoreantours.com/wp-content/uploads/2019/09/Vista-del-volc%C3%A1n-ilamatepec-Santa-Ana-1-e1568940865971.jpg" alt="Volcán de Santa Ana thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Volcán de Santa Ana</div>
+                            <div class="item-duration">3-4 horas</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Lago de Coatepeque"
+                        data-description="El Lago de Coatepeque es un impresionante lago de origen volcánico en Santa Ana. Sus aguas claras y el paisaje circundante lo hacen ideal para deportes acuáticos, paseos en bote y disfrutar de los restaurantes a la orilla."
+                        data-image="https://marketingsimulator.net/eavalos/wp-content/uploads/sites/112/2016/03/Lago-de-Coatepeque-672x372.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Lago_de_Coatepeque">
+                        <span class="item-number">02</span>
+                        <img src="https://marketingsimulator.net/eavalos/wp-content/uploads/sites/112/2016/03/Lago-de-Coatepeque-672x372.jpg" alt="Lago de Coatepeque thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Lago de Coatepeque</div>
+                            <div class="item-duration">Día completo</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Sitio Arqueológico Tazumal"
+                        data-description="Tazumal es un importante sitio arqueológico precolombino en Chalchuapa, Santa Ana, que alberga varias pirámides y estructuras mayas. Es un testimonio de la rica historia ancestral de El Salvador."
+                        data-image="https://i.redd.it/avhjezlnhnd51.jpg"
+                        data-link="https://www.cultura.gob.sv/parque-arqueologico-tazumal/">
+                        <span class="item-number">03</span>
+                        <img src="https://i.redd.it/avhjezlnhnd51.jpg" alt="Tazumal thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Tazumal</div>
+                            <div class="item-duration">2-3 horas</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Catedral de Santa Ana"
+                        data-description="La majestuosa Catedral de Santa Ana es una joya arquitectónica de estilo neogótico, ubicada en el corazón del Centro Histórico. Su imponente fachada y detalles la convierten en un símbolo de la ciudad."
+                        data-image="https://quepasasv.com/wp-content/uploads/2023/04/FtwxRKzXoAQiegA.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Catedral_de_Santa_Ana_(El_Salvador)">
+                        <span class="item-number">04</span>
+                        <img src="https://quepasasv.com/wp-content/uploads/2023/04/FtwxRKzXoAQiegA.jpg" alt="Catedral de Santa Ana thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Catedral de Santa Ana</div>
+                            <div class="item-duration">1-2 horas</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Parque Nacional Cerro Verde"
+                        data-description="Parte del complejo de Los Volcanes, Cerro Verde ofrece senderos fáciles, miradores impresionantes hacia el Volcán de Izalco y Santa Ana, y una abundante flora y fauna. Ideal para un paseo relajante."
+                        data-image="https://pateperro.app/wp-content/uploads/2023/07/ver-centroamerica-el-salvador-parque-nacional-cerro-verde-01-1140x570.jpg"
+                        data-link="https://elsalvadortravel.com/parque-nacional-los-volcanes/">
+                        <span class="item-number">05</span>
+                        <img src="https://pateperro.app/wp-content/uploads/2023/07/ver-centroamerica-el-salvador-parque-nacional-cerro-verde-01-1140x570.jpg">
+                        <div class="item-text">
+                            <div class="item-title">Cerro Verde</div>
+                            <div class="item-duration">Medio día</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Termales de Santa Teresa"
+                        data-description="Relájate y rejuvenece en las aguas termales de Santa Teresa, un oasis natural con piscinas de aguas volcánicas ricas en minerales, ideales para el bienestar y la tranquilidad. Ubicado cerca de Ahuachapán, pero accesible desde Santa Ana."
+                        data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/1b/c7/25/img-20200305-wa0069-largejpg.jpg?w=1200&h=-1&s=1"
+                        data-link="https://termasdesantateresa.com/">
+                        <span class="item-number">06</span>
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/1b/c7/25/img-20200305-wa0069-largejpg.jpg?w=1200&h=-1&s=1" alt="Termales de Santa Teresa thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Termales Santa Teresa</div>
+                            <div class="item-duration">2-4 horas</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+
+
+     <script src="/JS/departamentos.js"></script>
+     <script src="/js/santaana-contactos.js"></script>
+</body>
+</html>

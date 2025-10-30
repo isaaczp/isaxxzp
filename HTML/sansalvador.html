@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo San Salvador</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/divino-salvador-del-mundo-san-salvador.jpg" alt="Monumento al Salvador del Mundo" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">San Salvador</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Monumento al Salvador del Mundo</h1>
+                        <p id="site-description">El monumento más icónico de la ciudad y símbolo nacional, dedicado a Jesucristo. Se encuentra en una de las principales plazas y es un punto de encuentro y referencia cultural en la capital.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Monumento al Salvador del Mundo"
+                        data-description="El monumento más icónico de la ciudad y símbolo nacional, dedicado a Jesucristo. Se encuentra en una de las principales plazas y es un punto de encuentro y referencia cultural en la capital."
+                        data-image="https://c2.staticflickr.com/8/7024/6687687217_37351d80e9_b.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Monumento_al_Divino_Salvador_del_Mundo">
+                        <span class="item-number">01</span>
+                        <img src="https://live.staticflickr.com/6224/6304587484_4db0daa578_b.jpg" alt="Salvador del Mundo thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Salvador del Mundo</div>
+                            <div class="item-duration">Visita Rápida</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Catedral Metropolitana"
+                        data-description="Ubicada en el Centro Histórico, es la iglesia principal. Destaca por su cúpula y por albergar la cripta de San Óscar Arnulfo Romero, un sitio de profunda importancia histórica y religiosa."
+                        data-image="https://th.bing.com/th/id/R.35c8f1152aa0c531508a652250fcdf8b?rik=19Xeqg2ZNd%2bh6Q&pid=ImgRaw&r=0"
+                        data-link="https://es.wikipedia.org/wiki/Catedral_Metropolitana_de_San_Salvador">
+                        <span class="item-number">02</span>
+                        <img src="https://th.bing.com/th/id/R.07ea781dba7a4afcaa613b9725906089?rik=UylcOAjhbZ8Dkg&pid=ImgRaw&r=0" alt="Catedral Metropolitana thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Catedral Metropolitana</div>
+                            <div class="item-duration">1-2 horas</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Teatro Nacional de El Salvador"
+                        data-description="Una joya arquitectónica de estilo renacentista francés. Es el teatro más antiguo de Centroamérica y un punto clave para la cultura y las artes escénicas, recientemente restaurado."
+                        data-image="https://elsalvador.travel/system/wp-content/uploads/2024/07/teatro-07.jpg"
+                        data-link="https://www.cultura.gob.sv/teatro-nacional/">
+                        <span class="item-number">03</span>
+                        <img src="https://elsalvador.travel/system/wp-content/uploads/2024/07/teatro-07.jpg" alt="Teatro Nacional thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Teatro Nacional</div>
+                            <div class="item-duration">Recorrido Guiado</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Parque Nacional El Boquerón"
+                        data-description="Ubicado en la cima del Volcán de San Salvador, este parque ofrece senderos naturales y miradores con vistas espectaculares del cráter y de toda la capital. Ideal para el ecoturismo y el clima fresco."
+                        data-image="https://www.corsatur.gob.sv/wp-content/uploads/2021/06/El-Boqueron-scaled.jpg"
+                        data-link="https://elsalvadortravel.com/parque-nacional-el-boqueron/">
+                        <span class="item-number">04</span>
+                        <img src="https://www.corsatur.gob.sv/wp-content/uploads/2021/06/El-Boqueron-scaled.jpg" alt="El Boquerón thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">El Boquerón</div>
+                            <div class="item-duration">Medio Día</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Palacio Nacional de El Salvador"
+                        data-description="Antigua sede de los poderes del Estado. Su elegante arquitectura y salones históricos, como el Salón Azul, lo convierten en un importante museo y referencia de la historia política del país."
+                        data-image="https://guanacos.com/wp-content/uploads/2023/09/GUANACOS-PALACIO-NACIONAL-DE-EL-SALVADOR-2-1024x640.jpg"
+                        data-link="https://www.cultura.gob.sv/palacio-nacional/">
+                        <span class="item-number">05</span>
+                        <img src="https://live.staticflickr.com/65535/51534478904_558ae520ae_b.jpg" alt="Palacio Nacional thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Palacio Nacional</div>
+                            <div class="item-duration">1-2 horas</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Iglesia El Rosario"
+                        data-description="Una de las iglesias más singulares del mundo. Su diseño moderno y audaz, sin columnas, se ilumina con miles de vitrales de colores que crean un espectáculo de luz impresionante en su interior."
+                        data-image="https://cdn-pro.elsalvador.com/wp-content/uploads/2023/04/Iglesia-El-Rosario-11.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Iglesia_El_Rosario">
+                        <span class="item-number">06</span>
+                        <img src="https://cdn-pro.elsalvador.com/wp-content/uploads/2023/04/Iglesia-El-Rosario-11.jpg" alt="Iglesia El Rosario thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Iglesia El Rosario</div>
+                            <div class="item-duration">Sesión de Fotos</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/sansalvador-contactos.js"></script>
+</body>
+</html>

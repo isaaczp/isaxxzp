@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Cabañas</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabanas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/ciudad-de-sensuntepeque.jpg" alt="Ciudad de Sensuntepeque" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">Cabañas</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Sensuntepeque (Cabecera)</h1>
+                        <p id="site-description">Famosa por ser la 'Ciudad de las Bromas' y por su fuerte tradición alfarera y de elaboración de dulces artesanales. Su iglesia colonial domina la vista de la ciudad.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Sensuntepeque (Cabecera)"
+                        data-description="Famosa por ser la 'Ciudad de las Bromas' y por su fuerte tradición alfarera y de elaboración de dulces artesanales. Su iglesia colonial domina la vista de la ciudad."
+                        data-image="https://imgs.search.brave.com/znzwIeYvYak86xL-1tJ18qwPuNGc9IGXuz_B2Tq4wr4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9yaW5mby5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDgvY2l0eS1v/Zi1zZW5zdW50ZXBl/cXVlLWVsLXNhbHZh/ZG9yLmpwZw"
+                        data-link="https://es.wikipedia.org/wiki/Sensuntepeque">
+                        <span class="item-number">01</span>
+                        <img src="https://imgs.search.brave.com/znzwIeYvYak86xL-1tJ18qwPuNGc9IGXuz_B2Tq4wr4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9yaW5mby5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDgvY2l0eS1v/Zi1zZW5zdW50ZXBl/cXVlLWVsLXNhbHZh/ZG9yLmpwZw" alt="Sensuntepeque thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Sensuntepeque</div>
+                            <div class="item-duration">Dulces y Artesanía</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Río Lempa (Área de Cabañas)"
+                        data-description="El río más grande de El Salvador. En la zona de Cabañas ofrece paisajes rurales y la oportunidad para la pesca y el ecoturismo de bajo impacto en sus afluentes."
+                        data-image="https://imgs.search.brave.com/1Na-hlTtJiZzBafQlNkAoP4kM9uavbt8usJFzULNkfM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9ydmlhamFy/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wNy9SSU8t/TEVNUEEtUmlvcy1k/ZS1FbC1TYWx2YWRv/ci5qcGc"
+                        data-link="https://es.wikipedia.org/wiki/R%C3%ADo_Lempa">
+                        <span class="item-number">02</span>
+                        <img src="https://imgs.search.brave.com/1Na-hlTtJiZzBafQlNkAoP4kM9uavbt8usJFzULNkfM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9ydmlhamFy/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wNy9SSU8t/TEVNUEEtUmlvcy1k/ZS1FbC1TYWx2YWRv/ci5qcGc" alt="Río Lempa thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Río Lempa</div>
+                            <div class="item-duration">Naturaleza y Pesca</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Istepeque (Ruinas Prehispánicas)"
+                        data-description="Zona con evidencia de asentamientos prehispánicos, aunque no tan desarrolladas como otras ruinas, ofrecen un valor histórico local importante para la región."
+                        data-image="https://as2.ftcdn.net/v2/jpg/00/97/46/19/1000_F_97461961_C3FNPb8iuObprdjMspIVvtJF3G3g6FC9.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Caba%C3%B1as_(departamento)">
+                        <span class="item-number">03</span>
+                        <img src="https://imgs.search.brave.com/t4SIB7YHr5VkNx_wXQzX-3m9N1TWzHz4_xcgQ6OQHEY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzYyLzYwLzMx/LzM2MF9GXzI2MjYw/MzEwNV9NcUNVUWto/TVloQ0FVSjVCSHlR/Z2NTc0NSWXlISkEy/Vy5qcGc" alt="Istepeque thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Istepeque</div>
+                            <div class="item-duration">Restos Históricos</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Parque Cívico de Sensuntepeque"
+                        data-description="El centro de la vida social de la cabecera. Es un parque renovado que ofrece un espacio de recreación familiar, rodeado de edificios municipales y el templo colonial."
+                        data-image="https://imgs.search.brave.com/TMbFRAY-wOSgwIqW7RgM1imFIk0amggbukkel-Xhy8M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXNh/bGxhZGVsb3M0MDBj/ZXJyb3MuZmlsZXMu/d29yZHByZXNzLmNv/bS8yMDE0LzAzL3Bh/cnF1ZS1kZS1zZW5z/dW50ZXBlcXVlLTIw/MTQtaW1nXzEzNTEu/anBnP3c9NjQwJmg9/NDgw"
+                        data-link="https://es.wikipedia.org/wiki/Sensuntepeque">
+                        <span class="item-number">04</span>
+                        <img src="https://imgs.search.brave.com/TMbFRAY-wOSgwIqW7RgM1imFIk0amggbukkel-Xhy8M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXNh/bGxhZGVsb3M0MDBj/ZXJyb3MuZmlsZXMu/d29yZHByZXNzLmNv/bS8yMDE0LzAzL3Bh/cnF1ZS1kZS1zZW5z/dW50ZXBlcXVlLTIw/MTQtaW1nXzEzNTEu/anBnP3c9NjQwJmg9/NDgw" alt="Parque Cívico thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Parque Cívico</div>
+                            <div class="item-duration">Punto de Encuentro</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Villa Dolores (Zona Alta)"
+                        data-description="Población en las zonas montañosas del departamento, con un clima fresco y paisajes cafetaleros. Atrae a quienes buscan tranquilidad y un escape del calor del valle."
+                        data-image="https://imgs.search.brave.com/pK3wjrfPiUcdboqaXovDp86E6s2YxXKweyc-HZ6KkoY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hMC5t/dXNjYWNoZS5jb20v/aW0vcGljdHVyZXMv/aG9zdGluZy9Ib3N0/aW5nLTEyMTIxNTg5/NjcxNTAzODk3MTkv/b3JpZ2luYWwvNGE5/OWFjNWQtMmMwNS00/NzAwLTgxMDItNzAw/ZmEyNWNjYzM1Lmpw/ZWc_aW1fdz03MjA"
+                        data-link="https://es.wikipedia.org/wiki/Villa_Dolores">
+                        <span class="item-number">05</span>
+                        <img src="https://imgs.search.brave.com/pK3wjrfPiUcdboqaXovDp86E6s2YxXKweyc-HZ6KkoY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hMC5t/dXNjYWNoZS5jb20v/aW0vcGljdHVyZXMv/aG9zdGluZy9Ib3N0/aW5nLTEyMTIxNTg5/NjcxNTAzODk3MTkv/b3JpZ2luYWwvNGE5/OWFjNWQtMmMwNS00/NzAwLTgxMDItNzAw/ZmEyNWNjYzM1Lmpw/ZWc_aW1fdz03MjA" alt="Villa Dolores thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Villa Dolores</div>
+                            <div class="item-duration">Clima Fresco</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Bosque de Cinquera"
+                        data-description="Un área natural protegida que fue refugio durante el conflicto armado. Hoy es un santuario de paz, ideal para el ecoturismo, senderismo y un recorrido por la historia reciente de El Salvador."
+                        data-image="https://imgs.search.brave.com/-9Clq2crrwhPYfat6qMWTHZiObfUMkcqvLtJqKR0V6k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/YWxvaGFjYW1wLmNv/bS9aZjU3OGpFVTFT/WHN3eGw0T1dORlp3/VnhpNXBySnQtZlRC/MnFQQU44NmJVL3Jl/c2l6ZTpmaWxsOjEw/Mjg6NjY4L2VubGFy/Z2U6MS9jek02THk5/aGJHOW9ZUzVwYldG/blpYTXZjSEp2Y0dW/eWRHbGxjeTgxWlRB/eFpUQXdaalV5TUdS/bU1XVmpaV1ZrT1dR/Mk1XTXpNVFV5TVRo/a05Ua3hOREZtWTJV/NUxtcHdadw"
+                        data-link="https://elsalvadortravel.com/bosque-de-cinquera/">
+                        <span class="item-number">06</span>
+                        <img src="https://imgs.search.brave.com/oQuhRPvUjPXB2ms1uPM-y63bfJc2h_Hu1ST2A2tlihg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9yZXNoZXJt/b3NvLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNi8xMC9i/b3NxdWUtZGUtY2lu/cXVlcmEtY2FiYSVD/MyVCMWFzLWVsLXNh/bHZhZG9yLmpwZw" alt="Bosque Cinquera thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Bosque de Cinquera</div>
+                            <div class="item-duration">Ecoturismo e Historia</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/cabañas-contactos.js"></script>
+</body>
+</html>

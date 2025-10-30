@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Chalatenango</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/lago-suchitlan-chalatenango.jpg" alt="Lago Suchitlán" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">Chalatenango</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Lago Suchitlán</h1>
+                        <p id="site-description">El cuerpo de agua artificial más grande de El Salvador. Ofrece paseos en lancha, avistamiento de aves migratorias y paisajes serenos, siendo un punto de encuentro entre la naturaleza y la historia.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Lago Suchitlán"
+                        data-description="El cuerpo de agua artificial más grande de El Salvador. Ofrece paseos en lancha, avistamiento de aves migratorias y paisajes serenos, siendo un punto de encuentro entre la naturaleza y la historia."
+                        data-image="https://th.bing.com/th/id/R.09a239e9999360f4d7112d93beaec354?rik=QArCuTsOMJYjSg&pid=ImgRaw&r=0"
+                        data-link="https://elsalvadortravel.com/lago-suchitlan/">
+                        <span class="item-number">01</span>
+                        <img src="https://th.bing.com/th/id/R.09a239e9999360f4d7112d93beaec354?rik=QArCuTsOMJYjSg&pid=ImgRaw&r=0" alt="Lago Suchitlán thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Lago Suchitlán</div>
+                            <div class="item-duration">Navegación y Aves</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="La Palma, Cuna de la Artesanía"
+                        data-description="Famosa por su escuela de artesanía y el legado del artista Fernando Llort. Sus fachadas y objetos están decorados con un arte naíf lleno de color, paz y motivos naturales. Ideal para comprar souvenirs."
+                        data-image="https://elsalvador.travel/system/wp-content/uploads/2021/04/La-Palma.jpg"
+                        data-link="https://elsalvadortravel.com/la-palma/">
+                        <span class="item-number">02</span>
+                        <img src="https://elsalvador.travel/system/wp-content/uploads/2021/04/La-Palma.jpg" alt="La Palma thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">La Palma</div>
+                            <div class="item-duration">Arte y Color</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="El Pital (Punto más alto)"
+                        data-description="Con 2,730 metros sobre el nivel del mar, es el punto más alto de El Salvador. Ofrece un clima frío, neblina constante y densos bosques de pino. Perfecto para acampar y hacer senderismo."
+                        data-image="https://cdn.getyourguide.com/img/tour/bae1cfbc6c50f831c391e0a2de3c3a050171138697c059cd9ba7c139c15f14f4.jpg/148.jpg"
+                        data-link="https://elsalvadortravel.com/cerro-el-pital/">
+                        <span class="item-number">03</span>
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.ENj6IlRcGQmnZ7CQDZN29gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="El Pital thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Cerro El Pital</div>
+                            <div class="item-duration">Clima Frío y Senderismo</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="San Ignacio (Zona Cafetalera)"
+                        data-description="Pueblo fronterizo conocido por su producción de café de altura. Atrae visitantes por su clima fresco y su ambiente tranquilo, ideal para paseos a caballo y visitas a fincas cafetaleras."
+                        data-image="https://i.pinimg.com/originals/81/a5/fb/81a5fbb908ea108a672204260e285ea1.jpg"
+                        data-link="https://elsalvadortravel.com/san-ignacio/">
+                        <span class="item-number">04</span>
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.vVxOQE40May2piQnBTN8FwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="San Ignacio thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">San Ignacio</div>
+                            <div class="item-duration">Café y Caballos</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Presa Hidroeléctrica Cerrón Grande"
+                        data-description="La represa que forma el Lago Suchitlán. Un importante punto de ingeniería y fuente de energía, ofrece vistas panorámicas y es un hito de la geografía del norte del país."
+                        data-image="https://estaticos.elcolombiano.com/binrepository/716x477/0c0/0d0/none/11101/MKKC/embalse_43365307_20230925190837.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Central_Hidroel%C3%A9ctrica_Cerr%C3%B3n_Grande">
+                        <span class="item-number">05</span>
+                        <img src="https://estaticos.elcolombiano.com/binrepository/716x477/0c0/0d0/none/11101/MKKC/embalse_43365307_20230925190837.jpg" alt="Cerrón Grande thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Cerrón Grande</div>
+                            <div class="item-duration">Ingeniería y Vistas</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Ciudad de Chalatenango"
+                        data-description="La cabecera departamental, un centro de comercio con un ambiente tranquilo y colonial. Destaca su catedral y la Plaza Central, ideal para conocer la vida cotidiana del norte salvadoreño."
+                        data-image="https://guialugaresturisticos.com/wp-content/uploads/2022/11/300578827_645772843578947_314955094790523587_n.jpg"
+                        data-link="https://es.wikipedia.org/wiki/Chalatenango_(ciudad)">
+                        <span class="item-number">06</span>
+                        <img src="https://guialugaresturisticos.com/wp-content/uploads/2022/11/300578827_645772843578947_314955094790523587_n.jpg" alt="Ciudad de Chalatenango thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Ciudad de Chalatenango</div>
+                            <div class="item-duration">Centro Histórico</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/chalatenango-contactos.js"></script>
+</body>
+</html>

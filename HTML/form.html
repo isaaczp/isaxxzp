@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="menu-icon" id="menuToggle">☰</div>
+    <img src="https://elsalvador.travel/nextimages/n/img/logo-elsalvador.png" alt="Logo" class="logo">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar departamento...">
+      <button id="searchBtn">🔍</button>
+    </div>
+  </header>
+
+   <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+    <div class="form-card">
+    <div class="header-top">
+        <h1>Reserva</h1>
+        <div class="sign-in">Ya tienes una cuenta? <a href="#">Iniciar Sesión</a></div>
+    </div>
+
+    <div class="steps-indicator">
+        <div class="step-item active" id="step-indicator-1">
+            <div class="step-number">1</div>
+            <div class="step-name">Datos Personales</div>
+        </div>
+        <div class="step-item" id="step-indicator-2">
+            <div class="step-number">2</div>
+            <div class="step-name">Detalles de Reserva</div>
+        </div>
+        <div class="step-item" id="step-indicator-3">
+            <div class="step-number">3</div>
+            <div class="step-name">Confirmación Final</div>
+        </div>
+    </div>
+
+    <form id="reservaForm" onsubmit="return false;">
+        <div class="form-step active" id="step-1">
+            <div class="form-section-title">Datos Personales del Contacto</div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+            </div>
+
+            <div class="grid-2">
+                <div class="form-group">
+                    <label for="numero">Número de Teléfono</label>
+                    <input type="tel" id="numero" name="numero" placeholder="Ej: 7777-8888" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">Sexo</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="" disabled selected>Selecciona tu género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro / Prefiero no decir</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn btn-primary" onclick="nextStep(1)">Guardar y Continuar</button>
+            </div>
+        </div>
+
+        <div class="form-step" id="step-2">
+            <div class="form-section-title">Detalles de la Reserva</div>
+
+            <div class="grid-2">
+                <div class="form-group">
+                    <label for="departamento">Departamento</label>
+                    <select id="departamento" name="departamento" onchange="updateLocationSuggestions()" required>
+                        <option value="" disabled selected>Elige un departamento</option>
+                        <option value="La Libertad">La Libertad</option>
+                        <option value="Ahuachapán">Ahuachapán</option>
+                        <option value="Santa Ana">Santa Ana</option>
+                        <option value="San Salvador">San Salvador</option>
+                        <option value="Usulután">Usulután</option>
+                        </select>
+                </div>
+
+                <div class="form-group location-search-container">
+                    <label for="lugar">Lugar de Interés</label>
+                    <input type="text" id="lugar" name="lugar" placeholder="Busca un lugar turístico" required>
+                    <div class="suggestions-box hidden" id="location-suggestions">
+                        </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="form-group">
+                    <label for="fecha">Fecha de Reserva</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="personas">Cantidad de Personas</label>
+                    <input type="number" id="personas" name="personas" min="1" max="15" placeholder="Máx 15 personas" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="opinion_personal">Motivación de la Reserva (Tu Opinión)</label>
+                <textarea id="opinion_personal" name="opinion_personal" placeholder="¿Qué te motiva a reservar este lugar?"></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Atrás</button>
+                <button type="button" class="btn btn-primary" onclick="nextStep(2)">Guardar y Continuar</button>
+            </div>
+        </div>
+
+        <div class="form-step" id="step-3">
+            <div class="form-section-title">Datos Adicionales y Finalización</div>
+
+            <div class="form-group">
+                <label for="datos_adicionales">Comentarios y Solicitudes Especiales</label>
+                <textarea id="datos_adicionales" name="datos_adicionales" placeholder="¿Necesitas un guía bilingüe, transporte, o tienes alguna alergia?"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="medio_contacto">¿Cómo prefieres ser contactado para confirmar?</label>
+                <select id="medio_contacto" name="medio_contacto" required>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="email">Correo Electrónico</option>
+                    <option value="llamada">Llamada Telefónica</option>
+                </select>
+            </div>                                           
+
+            <div class="form-group">
+                <label>¡Tu Aventura Te Espera! 🏖️</label>
+                <p>Una vez completes el formulario, revisaremos tu solicitud y te contactaremos para confirmar la disponibilidad y finalizar tu reserva en El Salvador.</p>
+            </div>
+
+
+            <div class="button-group">
+                <button type="button" class="btn btn-secondary" onclick="prevStep(3)">Atrás</button>
+                <button type="submit" class="btn btn-primary" onclick="submitForm()">Finalizar Reserva</button>
+            </div>
+        </div>
+    </form>
+</div>
+  <footer class="footer">
+  <div class="footer-contenedor">
+    <div class="footer-logo">
+      <img src="https://elsalvador.travel/nextimages/n/img/logo-elsalvador.png" alt="El Salvador Logo">
+      <h2>Turismo El Salvador</h2>
+      <p>Descubre la belleza natural, cultura y hospitalidad de El Salvador 🇸🇻</p>
+    </div>
+
+    <div class="footer-contacto">
+      <h3>Contáctanos</h3>
+      <p><i class="fa-solid fa-envelope"></i> info@turismoelsalvador.com</p>
+      <p><i class="fa-solid fa-phone"></i> +503 6968 1122</p>
+      <p><i class="fa-solid fa-location-dot"></i> San Salvador, El Salvador</p>
+
+      <div class="redes-sociales">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-creditos">
+    <p>© 2025 Turismo El Salvador | Diseñado con ❤️ para mostrar lo mejor de nuestro país</p>
+  </div>
+</footer>
+
+<!-- Librería de íconos -->
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="/JS/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Turismo El Salvador</title>
+  <link rel="stylesheet" href="/CSS/blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="menu-icon" id="menuToggle">☰</div>
+    <img src="https://elsalvador.travel/nextimages/n/img/logo-elsalvador.png" alt="Logo" class="logo">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar departamento o sitio turistico...">
+      <button id="searchBtn">🔍</button>
+      <ul id="suggestions"></ul>
+    </div>
+  </header>
+
+  <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Bienvenido a nuestra comunidad viajera 🌎</h2>
+      <p>Comparte tus experiencias, aventuras y fotografías de los lugares más bellos de El Salvador.</p>
+      
+      <div class="development-box">
+        <h3>Disponible muy pronto</h3>
+        <p>Zona en desarrollo</p>
+      </div>
+
+      <div class="ejemplos">
+        <h4>Próximamente podrás:</h4>
+        <ul>
+          <li><i class="fa-solid fa-image"></i> Subir tus propias fotos de destinos turísticos.</li>
+          <li><i class="fa-solid fa-comment-dots"></i> Dejar comentarios y recomendaciones.</li>
+          <li><i class="fa-solid fa-heart"></i> Dar “me gusta” a las publicaciones.</li>
+          <li><i class="fa-solid fa-share-nodes"></i> Compartir experiencias.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-contenedor">
+    <div class="footer-logo">
+      <img src="https://elsalvador.travel/nextimages/n/img/logo-elsalvador.png" alt="El Salvador Logo">
+      <h2>Turismo El Salvador</h2>
+      <p>Descubre la belleza natural, cultura y hospitalidad de El Salvador 🇸🇻</p>
+    </div>
+
+    <div class="footer-contacto">
+      <h3>Contáctanos</h3>
+      <p><i class="fa-solid fa-envelope"></i> info@turismoelsalvador.com</p>
+      <p><i class="fa-solid fa-phone"></i> +503 6968 1122</p>
+      <p><i class="fa-solid fa-location-dot"></i> San Salvador, El Salvador</p>
+
+      <div class="redes-sociales">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-creditos">
+    <p>© 2025 Turismo El Salvador | Diseñado con ❤️ para mostrar lo mejor de nuestro país</p>
+  </div>
+</footer>
+
+<!-- Librería de íconos -->
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="/JS/buscador.js"></script>
+<script src="/JS/index.js"></script>
+
+
+</body>
+</html>

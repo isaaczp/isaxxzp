@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo La Unión</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/golfo-de-fonseca.jpg" alt="Golfo de Fonseca" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">La Unión</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Golfo de Fonseca</h1>
+                        <p id="site-description">La joya de la corona de La Unión. Un golfo compartido con Honduras y Nicaragua, famoso por sus numerosas islas y volcanes. Ofrece espectaculares puestas de sol y un puerto vital para la economía y el turismo.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Golfo de Fonseca"
+                        data-description="La joya de la corona de La Unión. Un golfo compartido con Honduras y Nicaragua, famoso por sus numerosas islas y volcanes. Ofrece espectaculares puestas de sol y un puerto vital para la economía y el turismo."
+                        data-image="https://imgs.search.brave.com/ladPFF42qNn-f0lkpWCjTrQ6t_vlLq4MKqQsreusN6o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVsZmluZXN0b3Vy/Lm5ldC93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wMy9MYS1V/bmlvbi0xNC5qcGc"
+                        data-link="https://elsalvadortravel.com/golfo-de-fonseca/">
+                        <span class="item-number">01</span>
+                        <img src="https://imgs.search.brave.com/ladPFF42qNn-f0lkpWCjTrQ6t_vlLq4MKqQsreusN6o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVsZmluZXN0b3Vy/Lm5ldC93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wMy9MYS1V/bmlvbi0xNC5qcGc" alt="Golfo de Fonseca thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Golfo de Fonseca</div>
+                            <div class="item-duration">Islas y Volcanes</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Isla Meanguera"
+                        data-description="La isla más grande y poblada de la parte salvadoreña del Golfo de Fonseca. Es un destino popular por sus playas de arena volcánica y su tranquilidad, accesible por lancha desde La Unión."
+                        data-image="https://imgs.search.brave.com/hV8PlnRqzlLL9yxnxFB89zpPFk1laguOCNFYK_rPmcI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdnRo/ZXJlZHRocmVhZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDgvaXNsYS1t/ZWFuZ3VlcmEtZGF5/MV9zYXJkaW5lLWZp/c2hpbmcxLmpwZz93/PTYyNSZoPTQwNg"
+                        data-link="https://es.wikipedia.org/wiki/Meanguera_(El_Salvador)">
+                        <span class="item-number">02</span>
+                        <img src="https://imgs.search.brave.com/hV8PlnRqzlLL9yxnxFB89zpPFk1laguOCNFYK_rPmcI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdnRo/ZXJlZHRocmVhZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDgvaXNsYS1t/ZWFuZ3VlcmEtZGF5/MV9zYXJkaW5lLWZp/c2hpbmcxLmpwZz93/PTYyNSZoPTQwNg" alt="Isla Meanguera thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Isla Meanguera</div>
+                            <div class="item-duration">Playa y Relax</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Playa Las Flores"
+                        data-description="Una playa de arena oscura con olas consistentes, lo que la convierte en un destino emergente para el surf. Su ambiente es más rústico y menos concurrido que las playas de la zona central."
+                        data-image="https://imgs.search.brave.com/yXmdH0Zfc_3gWwjLyjE-qBiqBWxmwmTv4BrQ_g-IpgU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bGFzZmxvcmVzcmVz/b3J0LmNvbS9maWxl/cy8yNjE0LzM3NDUv/MzY2My9sYXMtZmxv/cmVzLXJlc29ydC1z/dXJmLTIwMTUtMjUu/anBn"
+                        data-link="https://elsalvadortravel.com/playa-las-flores/">
+                        <span class="item-number">03</span>
+                        <img src="https://imgs.search.brave.com/yXmdH0Zfc_3gWwjLyjE-qBiqBWxmwmTv4BrQ_g-IpgU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bGFzZmxvcmVzcmVz/b3J0LmNvbS9maWxl/cy8yNjE0LzM3NDUv/MzY2My9sYXMtZmxv/cmVzLXJlc29ydC1z/dXJmLTIwMTUtMjUu/anBn" alt="Playa Las Flores thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Playa Las Flores</div>
+                            <div class="item-duration">Surf en Oriente</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Puerto de La Unión (Cutuco)"
+                        data-description="El puerto marítimo más grande e importante del oriente de El Salvador. Es un centro de comercio vital y un punto de conexión con los países vecinos a través del Golfo."
+                        data-image="https://imgs.search.brave.com/bfTzd2SLx0UTpkucncZ9x8w9G4b7GQYH-PtfzohHI3w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2U3L1B1ZXJ0b19M/YV9VbmklQzMlQjNu/LmpwZw"
+                        data-link="https://es.wikipedia.org/wiki/Puerto_de_La_Uni%C3%B3n">
+                        <span class="item-number">04</span>
+                        <img src="https://imgs.search.brave.com/bfTzd2SLx0UTpkucncZ9x8w9G4b7GQYH-PtfzohHI3w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2U3L1B1ZXJ0b19M/YV9VbmklQzMlQjNu/LmpwZw" alt="Puerto de La Unión thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Puerto de La Unión</div>
+                            <div class="item-duration">Comercio Marítimo</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Volcán de Conchagua"
+                        data-description="Un volcán inactivo con impresionantes vistas del Golfo de Fonseca y sus islas. Es un destino creciente para el ecoturismo y el senderismo, especialmente al amanecer y atardecer."
+                        data-image="https://imgs.search.brave.com/5u5obtt3EzaUk1PCjitKIMoEwWNYyvNrNGwl1Cf17E8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVsZmluZXN0b3Vy/Lm5ldC93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wMi9JTUdf/NjQwNi5qcGVn"
+                        data-link="https://elsalvadortravel.com/volcan-de-conchagua/">
+                        <span class="item-number">05</span>
+                        <img src="https://imgs.search.brave.com/5u5obtt3EzaUk1PCjitKIMoEwWNYyvNrNGwl1Cf17E8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVsZmluZXN0b3Vy/Lm5ldC93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wMi9JTUdf/NjQwNi5qcGVn" alt="Volcán de Conchagua thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Volcán de Conchagua</div>
+                            <div class="item-duration">Mirador del Golfo</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Ciudad de La Unión"
+                        data-description="La cabecera departamental, con un fuerte ambiente marítimo y una rica herencia colonial. Su iglesia principal y el malecón son puntos de referencia para el visitante."
+                        data-image="https://imgs.search.brave.com/-sdyB51oPbTZS75ACQwYQ81geq4kQlC8TS5j1nEDNmI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jdWx0/dXJhc3Yud29yZHBy/ZXNzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNS8wMy9w/YXJxdWUtZGUtbGEt/dW5pb24tbGEtdW5p/b24tZWwtc2FsdmFk/b3IuanBnP3c9NzUw"
+                        data-link="https://es.wikipedia.org/wiki/La_Uni%C3%B3n_(El_Salvador)">
+                        <span class="item-number">06</span>
+                        <img src="https://imgs.search.brave.com/-sdyB51oPbTZS75ACQwYQ81geq4kQlC8TS5j1nEDNmI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jdWx0/dXJhc3Yud29yZHBy/ZXNzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNS8wMy9w/YXJxdWUtZGUtbGEt/dW5pb24tbGEtdW5p/b24tZWwtc2FsdmFk/b3IuanBnP3c9NzUw" alt="Ciudad de La Unión thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Ciudad de La Unión</div>
+                            <div class="item-duration">Centro Portuario</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/launion-contactos.js"></script>
+</body>
+</html>

@@ -1,0 +1,617 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0d0d0d; 
+    color: #fff;
+    overflow: hidden; 
+}
+
+/* OFF-CANVAS MENU */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 280px;
+  height: 100%;
+  background:  rgba(0, 6, 39, 0.781);
+  color: #fff;
+  transition: left 0.4s ease;
+  z-index: 1500;
+  padding: 20px;
+}
+
+.offcanvas.open {
+  left: 0;
+}
+
+.offcanvas-content {
+  position: relative;
+  height: 100%;
+}
+
+.offcanvas-content h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.offcanvas-content ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.offcanvas-content ul li {
+    /* El LI puede tener estilos de margen o separación entre items */
+    margin-bottom: 5px; 
+}
+
+.offcanvas-content ul li a {
+    display: block;             
+    text-decoration: none;      
+    color: white;               
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.offcanvas-content ul li a:hover {
+    background: #e6e6ff;
+    color: #0057b7;
+    font-weight: bold;
+}
+
+/* --- ESTILOS PARA LOS BOTONES DE NAVEGACIÓN SUPERIORES --- */
+
+.top-navigation-buttons {
+    display: flex; /* Para que los botones se vean uno al lado del otro */
+    gap: 10px;    /* Espacio entre los botones */
+    margin-bottom: 20px; /* Espacio antes de que empiecen las zonas */
+    padding-bottom: 10px; /* Separación visual */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Línea divisoria */
+}
+
+.nav-btn {
+    flex-grow: 1; /* Para que ocupen el mismo ancho */
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 5px;
+    background: transparent; /* Fondo transparente para que sean diferentes a ReservarBtn */
+    color: white;
+    border: 1px solid white; /* Borde blanco para destacarlos */
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.9em;
+}
+
+.nav-btn:hover {
+    background: #e6e6ff; /* Mismo hover que tus enlaces */
+    color: #0057b7;
+}
+
+/* Asegurar que la lista de zonas tenga un margen adecuado después de los botones */
+#zoneMenu {
+    margin-top: 0; 
+}
+
+/* --- NUEVOS ESTILOS PARA EL MENÚ DESPLEGABLE (Accordion) --- */
+
+#zoneMenu {
+    padding: 0; /* Elimina el padding por defecto de la UL principal */
+}
+
+/* Estilo para el encabezado de la Zona (Botón de despliegue) */
+.dropdown-header {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.dropdown-header:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para la flecha de despliegue */
+.arrow {
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+/* Rotación de la flecha cuando el menú está abierto */
+.dropdown-header.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Contenido de los departamentos (inicialmente oculto) */
+.dropdown-content {
+    max-height: 0; /* Clave para el efecto de despliegue */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 5px 5px;
+}
+
+/* Estilos de los departamentos dentro del desplegable */
+.dropdown-content ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+
+.dropdown-content ul li a {
+    padding: 8px 12px; /* Ajuste para que se vea diferente al header */
+    color: #f0f0f0;
+    transition: background 0.3s, color 0.3s;
+    font-weight: normal;
+}
+
+.dropdown-content ul li a:hover {
+    background: #e6e6ffbd;
+    color: #0057b7;
+    font-weight: 600;
+}
+
+/* Asegura que el contenedor LI principal no interfiera con los estilos del desplegable */
+#zoneMenu > li {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#closeMenu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+#reservarBtn {
+  background:  rgba(0, 33, 219, 0.781);
+  color: #fffafa;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#reservarBtn:hover {
+  background: #000000;
+}
+
+.main-container {
+    position: relative;
+    width: 100w; /* Ancho relativo para mejor responsividad */
+     /* Límite de ancho */
+    height: 100vh; /* Altura relativa */
+    max-height: 800px;
+    background-color: rgba(0, 6, 41, 0.5); /* Fondo principal semi-transparente */
+    border-radius: 20px;
+    overflow: hidden; /* Asegura que los elementos internos no se desborden */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+    display: flex;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, #3a3a3a, #1a1a1a); /* Degradado sutil */
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1; /* Para que esté por encima del overlay */
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sección principal de la imagen grande y detalles */
+.hero-section {
+    flex: 1; /* Ocupa el espacio restante */
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido abajo */
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6); /* Oscurece la imagen para que el texto resalte */
+    transform: scale(1.05); /* Pequeña escala para un efecto visual */
+    transition: transform 0.5s ease-in-out; /* Animación de la imagen */
+}
+
+.info-overlay {
+    position: relative; /* Para que su contenido esté sobre la imagen */
+    z-index: 2;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 30px; /* Espacio para el botón y descripción */
+    box-sizing: border-box;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px; /* Espacio arriba */
+}
+
+.department-name {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #f0f0f0;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.label-hd, .label-age {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #bbb;
+}
+
+.menu-icon {
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+
+.details-section {
+    position: relative;
+    padding-left: 20px; /* Alineación del texto */
+    max-width: 60%; /* Para que no ocupe todo el ancho */
+    margin-bottom: 20px;
+    margin-left: 20px; /* Espacio desde el borde */
+}
+
+.details-section h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Sombra para resaltar el texto */
+    animation: fadeInSlideUp 0.7s ease-out forwards; /* Animación al cambiar */
+}
+
+.details-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #c0c0c0;
+    margin-bottom: 10px;
+    max-height: 150px; /* Limitar altura para descripciones largas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Puntos suspensivos si se corta */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Mostrar máximo 4 líneas */
+    -webkit-box-orient: vertical;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.contact-button {
+    background-color: rgba(16, 0, 87, 0.767); /* Azul */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Para el enlace */
+    display: inline-block; /* Para el padding */
+    animation: fadeIn 0.9s ease-out forwards;
+}
+
+.contact-button:hover {
+    background-color: #0057b388;
+    transform: translateY(-3px);
+}
+/* --- Cuadro modal de contacto --- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  animation: aparecerModal 0.3s ease;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #333;
+  margin: 8px 0;
+}
+
+#closeModal {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#closeModal:hover {
+  color: #e00;
+}
+
+@keyframes aparecerModal {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Lista lateral de sitios turísticos */
+.side-list-container {
+    width: 350px; /* Ancho fijo para la barra lateral */
+    background-color: rgba(16, 0, 87, 0.425);
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 0 20px 20px 0;
+    padding: 20px 0;
+    overflow-y: auto; /* Permite scroll vertical */
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.side-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 15px; /* Espacio para el scrollbar */
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+    margin-right: 5px; /* Para que el hover no afecte el scrollbar */
+}
+
+.list-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px); /* Pequeño desplazamiento */
+}
+
+.list-item.active {
+    background-color: rgba(0, 123, 255, 0.2); /* Azul semi-transparente para activo */
+    border-left: 3px solid #007bff; /* Borde azul para indicar activo */
+    transform: translateX(0); /* Deshacer hover */
+}
+
+.item-number {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #aaa;
+}
+
+.list-item img {
+    width: 80px; /* Tamaño de la miniatura */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.item-text {
+    flex-grow: 1;
+}
+
+.item-title {
+    font-size: 1em;
+    font-weight: 600;
+    color: #f0f0f0;
+    line-height: 1.3;
+}
+
+.item-duration {
+    font-size: 0.85em;
+    color: #b0b0b0;
+}
+
+/* Scrollbar personalizado para la lista lateral */
+.side-list-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.side-list-container::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 10px;
+}
+
+.side-list-container::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 2px solid #2a2a2a;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .main-container {
+        height: 90vh;
+        width: 95vw;
+        flex-direction: column; /* Apila en pantallas más pequeñas */
+    }
+
+    .hero-section {
+        flex: 0 0 60%; /* La sección principal toma más espacio */
+        padding: 20px;
+    }
+
+    .info-overlay {
+        justify-content: flex-end;
+    }
+
+    .details-section {
+        max-width: 80%;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .details-section h1 {
+        font-size: 2.5em;
+    }
+
+    .details-section p {
+        font-size: 1em;
+        -webkit-line-clamp: 3; /* Menos líneas en móvil */
+    }
+
+    .department-name {
+        margin-left: 0;
+    }
+
+    .header-info {
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .options {
+        margin-right: 0;
+    }
+
+    .play-button {
+        width: 60px;
+        height: 60px;
+        font-size: 2em;
+        top: 30%; /* Ajustar posición en pantallas pequeñas */
+    }
+
+    .side-list-container {
+        width: 100%; /* Ocupa todo el ancho */
+        height: 40%; /* Menos altura */
+        border-radius: 0 0 20px 20px;
+        padding: 15px 0;
+    }
+
+    .side-list {
+        flex-direction: row; /* Horizontal para móviles */
+        overflow-x: auto;
+        padding-bottom: 10px; /* Espacio para el scrollbar */
+        padding-left: 10px;
+        gap: 10px;
+        scroll-snap-type: x mandatory;
+        padding-right: 10px;
+    }
+
+    .side-list::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .list-item {
+        flex: 0 0 200px; /* Ancho fijo para items horizontales */
+        flex-direction: column; /* Apilar contenido en el item */
+        text-align: center;
+        padding: 10px;
+        margin-right: 0;
+        scroll-snap-align: center;
+    }
+    
+    .list-item img {
+        width: 100%;
+        height: 100px; /* Más grande en móvil */
+    }
+
+    .list-item .item-number {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Historia y Misión</title>
+    <link rel="stylesheet" href="/CSS/nosotros.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+    </div>
+      <!-- Header -->
+  <header>
+    <div class="menu-icon" id="menuToggle">☰</div>
+    <img src="https://elsalvador.travel/nextimages/n/img/logo-elsalvador.png" alt="Logo" class="logo">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar departamento o sitio turistico...">
+      <button id="searchBtn">🔍</button>
+      <ul id="suggestions"></ul>
+    </div>
+  </header>
+    <div class="main-header">
+        <h1 class="fade-in-down">Nuestra Historia y Compromiso</h1>
+        <p class="fade-in-down delay-1">Conoce al equipo detrás de El Salvador Interactivo.</p>
+    </div>
+
+    <main class="container">
+        
+        <section class="mision-vision slide-in-left">
+            <h2>Misión y Visión</h2>
+            <p>
+                Nuestra misión es ser la plataforma líder en la divulgación cultural, turística y geográfica de El Salvador, ofreciendo información precisa y visualmente atractiva para residentes y visitantes.
+            </p>
+            <p>
+                Nuestra visión es que cada salvadoreño se sienta orgulloso de su tierra y que el mundo reconozca la riqueza inigualable de nuestro pulgarcito de Centroamérica.
+            </p>
+        </section>
+
+        <section class="valores slide-in-right">
+            <h2>Nuestros Valores</h2>
+            <ul>
+                <li class="zoom-in"><span>1.</span> Integridad y Precisión</li>
+                <li class="zoom-in delay-2"><span>2.</span> Pasión por El Salvador</li>
+                <li class="zoom-in delay-4"><span>3.</span> Innovación Digital</li>
+                <li class="zoom-in delay-6"><span>4.</span> Compromiso Comunitario</li>
+            </ul>
+        </section>
+
+        <section class="equipo-galeria">
+            <h2>Conoce a Nuestros Guias de Turismo</h2>
+            <div class="galeria-grid">
+                <div class="miembro-card scale-up">
+                    <img src="https://imgs.search.brave.com/6uOmoN69RjRPYZCgwVCKSDXNdIEEYU55KDQ1hGCfYWY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE2LzI0LzE4Lzgw/LzM2MF9GXzE2MjQx/ODgwMDlfc2c0WTBS/NkV1djNyMHdnd1lm/Mk5PWGVidm9yVENC/b2MuanBn" alt="Miembro del Equipo 1">
+                    <h3>Claudia P.</h3>
+                    <p>Una guia turistica con mucho carisma, ella te sacara una sonrisa en tu viaje por El Salvador.</p>
+                </div>
+                <div class="miembro-card scale-up delay-1">
+                    <img src="https://imgs.search.brave.com/l29fiGlRmno65eRaddDixko5Sfbbi1Ykx7zU1Fb8bKo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/cmV0cmF0by1ob21i/cmUtbmVnb2Npb3Mt/b2ZpY2luYS0yXzEy/NjItMTQ4OC5qcGc_/c2VtdD1haXNfaHli/cmlkJnc9NzQwJnE9/ODA" alt="Miembro del Equipo 2">
+                    <h3>Ricardo M.</h3>
+                    <p>Ricardo conoce cada rincon de El Salvador, no te pierdas la oportunidad de tenerlo como guia.</p>
+                </div>
+                <div class="miembro-card scale-up delay-2">
+                    <img src="https://imgs.search.brave.com/gJw_vb0It9B5HNB9CyrgPDVQIZilbjBxxBrkdRd5izM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aW1hZ2VzLmxpdmVj/YXJlZXIuZXMvcGFn/ZXMvaGFiaWxpZGFk/ZXNfY3ZfbGNfZXNf/MS5qcGc_Zml0PWNy/b3AmaD0yMTYmZHBy/PTM" alt="Miembro del Equipo 3">
+                    <h3>Sofía R.</h3>
+                    <p>Una persona con mucha personalidad, persona muy alegre .</p>
+                </div>
+                <div class="miembro-card scale-up delay-3">
+                    <img src="https://imgs.search.brave.com/8-FP-amvP0_2_3uynoysAZt2v7fk0371C9cjypw270Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9ob21icmUtbmVn/b2Npb3MtdHJhYmFq/YW5kby1vZmljaW5h/LXByaW1lci1wbGFu/b183MDk5ODQtMjMz/MTguanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MCZxPTgw" alt="Miembro del Equipo 4">
+                    <h3>Javier L.</h3>
+                    <p>Desarrollador Web.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main> 
+
+      <footer class="footer">
+  <div class="footer-contenedor">
+    <div class="footer-logo">
+      <img src="https://elsalvador.travel/nextimages/n/img/logo-elsalvador.png" alt="El Salvador Logo">
+      <h2>Turismo El Salvador</h2>
+      <p>Descubre la belleza natural, cultura y hospitalidad de El Salvador 🇸🇻</p>
+    </div>
+
+    <div class="footer-contacto">
+      <h3>Contáctanos</h3>
+      <p><i class="fa-solid fa-envelope"></i> info@turismoelsalvador.com</p>
+      <p><i class="fa-solid fa-phone"></i> +503 6968 1122</p>
+      <p><i class="fa-solid fa-location-dot"></i> San Salvador, El Salvador</p>
+
+      <div class="redes-sociales">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-creditos">
+    <p>© 2025 Turismo El Salvador | Diseñado con ❤️ para mostrar lo mejor de nuestro país</p>
+  </div>
+</footer>
+
+<!-- Librería de íconos -->
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+ <script src="/JS/index.js"> </script>
+ <script src="/JS/buscador.js"></script>
+</body>
+</html>

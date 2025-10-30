@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo San Miguel</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/volcan-de-san-miguel.jpg" alt="Volcán de San Miguel" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">San Miguel</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title"></h1>
+                        <p id="site-description">Uno de los volcanes más activos y conocidos, domina el paisaje de la zona oriental. Aunque ha tenido erupciones recientes, es un destino para el senderismo avanzado, ofreciendo vistas espectaculares del oriente.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Volcán de San Miguel (Chaparrastique)"
+                        data-description="Uno de los volcanes más activos y conocidos, domina el paisaje de la zona oriental. Aunque ha tenido erupciones recientes, es un destino para el senderismo avanzado, ofreciendo vistas espectaculares del oriente."
+                        data-image="https://imgs.search.brave.com/hd3D3n8Oappvtd7dLmO9sYw-TCsjoslpRemRFTDysEA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90cmF2/ZWxtYWRlbWVkb2l0/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wMy9EU0Mw/MzgwMy5qcGc"
+                        data-link="https://elsalvadortravel.com/volcan-de-san-miguel/">
+                        <span class="item-number">01</span>
+                        <img src="https://imgs.search.brave.com/hd3D3n8Oappvtd7dLmO9sYw-TCsjoslpRemRFTDysEA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90cmF2/ZWxtYWRlbWVkb2l0/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wMy9EU0Mw/MzgwMy5qcGc" alt="Volcán de San Miguel thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Volcán Chaparrastique</div>
+                            <div class="item-duration">Senderismo Avanzado</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Lago de Olomega"
+                        data-description="Un hermoso lago con importancia biológica por su diversidad de aves y vegetación. Ideal para paseos en lancha y disfrutar de la tranquilidad de la zona rural oriental."
+                        data-image="https://imgs.search.brave.com/R0z0QFi9FDZiBNUiwL1xq7QhEt43LPdRxrF3ncUpiwY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9ydmlhamFy/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8xMi9MYWd1/bmEtZGUtT2xvbWVn/YS1lbi1TYW4tTWln/dWVsLmpwZw"
+                        data-link="https://es.wikipedia.org/wiki/Lago_de_Olomega">
+                        <span class="item-number">02</span>
+                        <img src="https://imgs.search.brave.com/R0z0QFi9FDZiBNUiwL1xq7QhEt43LPdRxrF3ncUpiwY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9ydmlhamFy/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8xMi9MYWd1/bmEtZGUtT2xvbWVn/YS1lbi1TYW4tTWln/dWVsLmpwZw" alt="Lago de Olomega thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Lago de Olomega</div>
+                            <div class="item-duration">Navegación y Aves</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Playa El Cuco"
+                        data-description="Una playa extensa y plana, ideal para caminar y disfrutar de la arena grisácea y aguas tranquilas. Es uno de los principales destinos de playa en el oriente del país."
+                        data-image="https://imgs.search.brave.com/Bz-M-k4Z0b2UYsNSPslKherNDdasy8BJQ5eXLUGglDo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tLy1r/b1RIb3RIOTZDZy9W/VWp2ZDRncTc4SS9B/QUFBQUFBQUl1Zy9H/cVVHNXIwa2VVMC9z/NTAwL3BsYXlhLWVs/LWN1Y28uanBn"
+                        data-link="https://elsalvadortravel.com/playa-el-cuco/">
+                        <span class="item-number">03</span>
+                        <img src="https://imgs.search.brave.com/Bz-M-k4Z0b2UYsNSPslKherNDdasy8BJQ5eXLUGglDo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tLy1r/b1RIb3RIOTZDZy9W/VWp2ZDRncTc4SS9B/QUFBQUFBQUl1Zy9H/cVVHNXIwa2VVMC9z/NTAwL3BsYXlhLWVs/LWN1Y28uanBn" alt="Playa El Cuco thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Playa El Cuco</div>
+                            <div class="item-duration">Sol y Playa Oriental</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Ciudad de San Miguel"
+                        data-description="La capital del oriente, famosa por su vibrante Carnaval de San Miguel. Es un importante centro comercial y un punto de interés cultural con su hermosa Catedral Basílica."
+                        data-image="https://imgs.search.brave.com/of2VBSouMthO78UGcvFrOYSuKpKDoddldLo2S2eFYWU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzkyL1Nhbl9NaWd1/ZWxfRWxfU2FsdmFk/b3IucG5n"
+                        data-link="https://es.wikipedia.org/wiki/San_Miguel_(El_Salvador)">
+                        <span class="item-number">04</span>
+                        <img src="https://imgs.search.brave.com/of2VBSouMthO78UGcvFrOYSuKpKDoddldLo2S2eFYWU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzkyL1Nhbl9NaWd1/ZWxfRWxfU2FsdmFk/b3IucG5n" alt="San Miguel Ciudad thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Ciudad de San Miguel</div>
+                            <div class="item-duration">Comercio y Carnaval</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Puerto El Relámpago"
+                        data-description="Un pequeño puerto con fuerte actividad pesquera. Ofrece mariscos frescos y es un punto de conexión para visitar las playas y el Lago de Olomega."
+                        data-image="https://imgs.search.brave.com/BNcCv7AVbOhWIl5ykWJxroj9qig_8mjUyoUmMRSLtXs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9yaW5mby5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTEvTGEtTGli/ZXJ0YWQtUGllci1F/bC1TYWx2YWRvci5q/cGc"
+                        data-link="https://es.wikipedia.org/wiki/San_Miguel_(El_Salvador)">
+                        <span class="item-number">05</span>
+                        <img src="https://imgs.search.brave.com/BNcCv7AVbOhWIl5ykWJxroj9qig_8mjUyoUmMRSLtXs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbHNh/bHZhZG9yaW5mby5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTEvTGEtTGli/ZXJ0YWQtUGllci1F/bC1TYWx2YWRvci5q/cGc" alt="Puerto El Relámpago thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Puerto El Relámpago</div>
+                            <div class="item-duration">Mariscos y Pesca</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Volcán de Chinameca (El Pacayal)"
+                        data-description="Un volcán con una caldera bien definida, rodeado de fincas cafetaleras en las faldas. Ofrece paisajes naturales de montaña y un clima más fresco que la ciudad."
+                        data-image="https://imgs.search.brave.com/oaFSfXLrbbdUF_UAl_pxOl3PTtMaSDWLCLsT4fIHCvs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/cHJvLmVsc2FsdmFk/b3IuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzExL3Zv/bGNhbi1kZS1zYW4t/bWlndWVsLTEuanBn"
+                        data-link="https://es.wikipedia.org/wiki/Volc%C3%A1n_de_Chinameca">
+                        <span class="item-number">06</span>
+                        <img src="https://imgs.search.brave.com/oaFSfXLrbbdUF_UAl_pxOl3PTtMaSDWLCLsT4fIHCvs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/cHJvLmVsc2FsdmFk/b3IuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzExL3Zv/bGNhbi1kZS1zYW4t/bWlndWVsLTEuanBn" alt="Volcán Chinameca thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Volcán Chinameca</div>
+                            <div class="item-duration">Café de Altura</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/sanmiguel-contactos.js"></script>
+</body>
+</html>

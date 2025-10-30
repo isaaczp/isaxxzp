@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Usulután</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/bahia-de-jiquilisco.jpg" alt="Bahía de Jiquilisco" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">Usulután</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Bahía de Jiquilisco</h1>
+                        <p id="site-description">La mayor reserva de manglares en El Salvador. Un humedal Ramsar crucial para la biodiversidad, con más de 10 islas y un destino ideal para el ecoturismo, kayak y avistamiento de aves y tortugas marinas.</p>
+                        <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    <div class="list-item active" 
+                        data-id="01"
+                        data-name="Bahía de Jiquilisco"
+                        data-description="La mayor reserva de manglares en El Salvador. Un humedal Ramsar crucial para la biodiversidad, con más de 10 islas y un destino ideal para el ecoturismo, kayak y avistamiento de aves y tortugas marinas."
+                        data-image="https://imgs.search.brave.com/gQKc--Gd8jy4Ox73vjIyeKgdolwKLfutpD9fy20qktI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90dW5j/b2xpZmUuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIxLzA5/L2ppcXVpbGlzY28t/YmF5LWJvYXQtdG91/ci10by1pc2xhLXBh/amFyaXRvLWVhc3Qt/ZWwtc2FsdmFkb3It/dXN1bHV0YW4tMS0x/LmpwZw"
+                        data-link="https://elsalvadortravel.com/bahia-de-jiquilisco/">
+                        <span class="item-number">01</span>
+                        <img src="https://imgs.search.brave.com/OAh_83VPEZ2dNVtRnwodcW710WISA4VFo5tjPsfK_BI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXlh/bmVzY2FwZXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA2L0theWFrLUJh/aGlhLWRlLUppcXVp/bGlzY28tVXN1bHV0/YW4uanBn" alt="Bahía de Jiquilisco thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Bahía de Jiquilisco</div>
+                            <div class="item-duration">Manglares y Biodiversidad</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Playa El Espino"
+                        data-description="Una playa tranquila y poco profunda, ideal para la natación y el disfrute familiar. Sus palmeras y arenas claras la hacen muy atractiva para un día de descanso en la costa oriental."
+                        data-image="https://imgs.search.brave.com/wnskzW-B-pap_WbqpIP0yB7hRpRw68L57YwL8fajJdE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2IzLzg4/LzU4L2IzODg1ODY0/ZjdkMzk0MzBlYWZk/YTgxMmYzMGYyNGEz/LmpwZw"
+                        data-link="https://elsalvadortravel.com/playa-el-espino/">
+                        <span class="item-number">02</span>
+                        <img src="https://imgs.search.brave.com/wnskzW-B-pap_WbqpIP0yB7hRpRw68L57YwL8fajJdE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2IzLzg4/LzU4L2IzODg1ODY0/ZjdkMzk0MzBlYWZk/YTgxMmYzMGYyNGEz/LmpwZw" alt="Playa El Espino thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Playa El Espino</div>
+                            <div class="item-duration">Sol y Playa Familiar</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="Volcán de Usulután"
+                        data-description="Un volcán inactivo con un cráter bien conservado, ideal para el senderismo avanzado. Sus faldas son ricas en cultivos, y desde la cima se tienen vistas de la bahía y el océano."
+                        data-image="https://imgs.search.brave.com/adX2jH35L9UOZhci4i5mACrXP-eoEDA1P47nTKN5RHI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jdWx0/dXJhc3Yud29yZHBy/ZXNzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNS8wMi92/b2xjYW4tZGUtdXN1/bHV0YW4tZWwtc2Fs/dmFkb3IuanBn"
+                        data-link="https://es.wikipedia.org/wiki/Volc%C3%A1n_de_Usulut%C3%A1n">
+                        <span class="item-number">03</span>
+                        <img src="https://imgs.search.brave.com/adX2jH35L9UOZhci4i5mACrXP-eoEDA1P47nTKN5RHI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jdWx0/dXJhc3Yud29yZHBy/ZXNzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNS8wMi92/b2xjYW4tZGUtdXN1/bHV0YW4tZWwtc2Fs/dmFkb3IuanBn" alt="Volcán de Usulután thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Volcán de Usulután</div>
+                            <div class="item-duration">Senderismo y Vistas</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Puerto El Triunfo"
+                        data-description="Un puerto pesquero y punto de partida para las excursiones a las islas de la Bahía de Jiquilisco. Es famoso por su Mercado del Mar y su ambiente de vida marítima."
+                        data-image="https://imgs.search.brave.com/diI-YnhUrpCA4KzYZ7GlRPRIzp6u3zE5kLwNQChSK-s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tLy0z/M2JLZnVtUkEzdy9W/Y0RseWd6VDJaSS9B/QUFBQUFBQUtGNC9U/bkNRX0h0TWRMRS9z/NTAwLUljNDIvcHVl/cnRvLWVsLXRyaXVu/Zm8tdXN1bHV0YW4u/anBn"
+                        data-link="https://elsalvadortravel.com/puerto-el-triunfo/">
+                        <span class="item-number">04</span>
+                        <img src="https://imgs.search.brave.com/diI-YnhUrpCA4KzYZ7GlRPRIzp6u3zE5kLwNQChSK-s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tLy0z/M2JLZnVtUkEzdy9W/Y0RseWd6VDJaSS9B/QUFBQUFBQUtGNC9U/bkNRX0h0TWRMRS9z/NTAwLUljNDIvcHVl/cnRvLWVsLXRyaXVu/Zm8tdXN1bHV0YW4u/anBn" alt="Puerto El Triunfo thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Puerto El Triunfo</div>
+                            <div class="item-duration">Puerta a la Bahía</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Ciudad de Usulután"
+                        data-description="La cabecera departamental, con una mezcla de tradición y comercio. Su parque central y catedral son puntos de interés, mostrando la dinámica del oriente de El Salvador."
+                        data-image="https://imgs.search.brave.com/sikX0J0YdHArOr9zsxdFZMJ1Nzs2JDII28i3-_yXU0Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dG9kb3R1cmlzbW8u/c3YvY3VzdG9tL2Rv/bWFpbl8xL2ltYWdl/X2ZpbGVzL2NrZWRp/dG9yL3NpdGVtZ3Jf/UGFycXVlJTIwQ2Vu/dHJhbCUyMGRlJTIw/VXN1bHV0JUMzJUEx/bi5qcGc"
+                        data-link="https://es.wikipedia.org/wiki/Usulut%C3%A1n_(ciudad)">
+                        <span class="item-number">05</span>
+                        <img src="https://imgs.search.brave.com/sikX0J0YdHArOr9zsxdFZMJ1Nzs2JDII28i3-_yXU0Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dG9kb3R1cmlzbW8u/c3YvY3VzdG9tL2Rv/bWFpbl8xL2ltYWdl/X2ZpbGVzL2NrZWRp/dG9yL3NpdGVtZ3Jf/UGFycXVlJTIwQ2Vu/dHJhbCUyMGRlJTIw/VXN1bHV0JUMzJUEx/bi5qcGc" alt="Usulután Ciudad thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Usulután Ciudad</div>
+                            <div class="item-duration">Centro de Comercio</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="06"
+                        data-name="Península El Cordón del Plata"
+                        data-description="Una formación de tierra que separa la Bahía de Jiquilisco del Océano Pacífico. Sus playas son vírgenes y es un lugar importante para el anidamiento de tortugas marinas."
+                        data-image="https://imgs.search.brave.com/JL2wzS9hM_qnWL31wl7bfC-HQisQmds591TmLev3GZs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/LzdjL0VudHJhZGFf/UGFycXVlX3Byb3Zp/bmNpYWxfZGVsX0Nv/cmQlQzMlQjNuX2Rl/bF9QbGF0YS5qcGc"
+                        data-link="https://es.wikipedia.org/wiki/Jiquilisco">
+                        <span class="item-number">06</span>
+                        <img src="https://imgs.search.brave.com/JL2wzS9hM_qnWL31wl7bfC-HQisQmds591TmLev3GZs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/LzdjL0VudHJhZGFf/UGFycXVlX3Byb3Zp/bmNpYWxfZGVsX0Nv/cmQlQzMlQjNuX2Rl/bF9QbGF0YS5qcGc" alt="Cordón del Plata thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Cordón del Plata</div>
+                            <div class="item-duration">Playas Vírgenes</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/usulutan-contactos.js"></script>
+</body>
+</html>

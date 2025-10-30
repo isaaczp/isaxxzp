@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Cuscatlán</title>
+    <link rel="stylesheet" href="/CSS/departamentos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Menú off-canvas -->
+<div id="offCanvasMenu" class="offcanvas">
+    <div class="offcanvas-content">
+        <span id="closeMenu">&times;</span>
+        <h2>Departamentos</h2>
+        
+        <div class="top-navigation-buttons">
+            <a href="index.html" class="nav-btn">Inicio</a>
+            <a href="nosotros.html" class="nav-btn">Nosotros</a>
+            <a href="blog.html" class="nav-btn">Blog</a>
+        </div>
+        <ul id="zoneMenu">
+            <li>
+                <div class="dropdown-header">
+                    Zona Occidental
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="santaana.html">Santa Ana</a></li>
+                        <li><a href="sonsonate.html">Sonsonate</a></li>
+                        <li><a href="ahuachapan.html">Ahuachapán</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Central
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="sansalvador.html">San Salvador</a></li>
+                        <li><a href="lalibertad.html">La Libertad</a></li>
+                        <li><a href="chalatenango.html">Chalatenango</a></li>
+                        <li><a href="lapaz.html">La Paz</a></li>
+                        <li><a href="sanvicente.html">San Vicente</a></li>
+                        <li><a href="cuscatlan.html">Cuscatlán</a></li>
+                        <li><a href="cabañas.html">Cabañas</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown-header">
+                    Zona Oriental 
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="usulutan.html">Usulután</a></li>
+                        <li><a href="sanmiguel.html">San Miguel</a></li>
+                        <li><a href="morazan.html">Morazán</a></li>
+                        <li><a href="launion.html">La Unión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <button id="reservarBtn" onclick="window.location.href='form.html'">Reservar viaje</button>
+    </div>
+</div>
+
+
+    <div class="main-container">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <div class="hero-section">
+                <img id="hero-image" src="https://elsalvadortravel.com/wp-content/uploads/2020/09/teatro-de-cojutepeque.jpg" alt="Teatro de Cojutepeque" class="hero-image">
+                <div class="info-overlay">
+                    <div class="header-info">
+                        <span class="department-name">Cuscatlán</span>
+                        <div class="options">
+                            <div id="menuToggle" class="menu-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-section">
+                        <h1 id="site-title">Teatro de Cojutepeque</h1>
+                        <p id="site-description">Ubicado en la cabecera departamental, es un edificio histórico con una arquitectura elegante que ha servido como centro cultural y artístico para la región por décadas.</p>
+                       <a class="contact-button" id="contact-button-link">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-list-container">
+                <div class="side-list">
+                    
+                    
+
+                    <div class="list-item" 
+                        data-id="01"
+                        data-name="Lago de Ilopango (Acceso Cuscatlán)"
+                        data-description="El cuerpo de agua natural más grande, compartido con Cuscatlán, San Salvador y La Paz. Ofrece balnearios en sus orillas para nadar, navegar y disfrutar del paisaje volcánico."
+                        data-image="https://imgs.search.brave.com/t_kmnglBNoGJ5TNiN0seL7EtfvmNTMQRUPdBu_kSmGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91bmNo/ZXJvbWFzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMi8x/Mi9ydXRhLXBhbm9y/YW1pY2EtbGFnby1k/ZS1pbG9wYW5nby5q/cGc"
+                        data-link="https://elsalvadortravel.com/lago-de-ilopango/">
+                        <span class="item-number">01</span>
+                        <img src="https://imgs.search.brave.com/t_kmnglBNoGJ5TNiN0seL7EtfvmNTMQRUPdBu_kSmGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91bmNo/ZXJvbWFzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMi8x/Mi9ydXRhLXBhbm9y/YW1pY2EtbGFnby1k/ZS1pbG9wYW5nby5q/cGc" alt="Lago de Ilopango thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Lago de Ilopango</div>
+                            <div class="item-duration">Náutica y Vistas</div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="list-item" 
+                        data-id="02"
+                        data-name="Cerro de Las Pavas"
+                        data-description="Ubicado en el municipio de Cojutepeque. Famoso por su santuario religioso dedicado a la Virgen de Fátima y ofrece un mirador con vistas espectaculares del Valle de Jiboa y el Lago de Ilopango."
+                        data-image="https://imgs.search.brave.com/--QSNsCmXe0JXcVArcRyQYfrGGbz7Y9xlBjekvmjlTg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMy5l/dS13ZXN0LTIud2Fz/YWJpc3lzLmNvbS9p/bmZpdGVtYS9hZ2cv/YXVkaW9ndWlhL2Vs/LXNhbHZhZG9yL2N1/c2NhdGxhbi9jb2p1/dGVwZXF1ZS9jZXJy/by1kZS1sYXMtcGF2/YXMvY2Vycm8tZGUt/bGFzLXBhdmFzLTE1/LndlYnA"
+                        data-link="https://es.wikipedia.org/wiki/Cojutepeque">
+                        <span class="item-number">02</span>
+                        <img src="https://imgs.search.brave.com/--QSNsCmXe0JXcVArcRyQYfrGGbz7Y9xlBjekvmjlTg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMy5l/dS13ZXN0LTIud2Fz/YWJpc3lzLmNvbS9p/bmZpdGVtYS9hZ2cv/YXVkaW9ndWlhL2Vs/LXNhbHZhZG9yL2N1/c2NhdGxhbi9jb2p1/dGVwZXF1ZS9jZXJy/by1kZS1sYXMtcGF2/YXMvY2Vycm8tZGUt/bGFzLXBhdmFzLTE1/LndlYnA" alt="Cerro de Las Pavas thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Cerro de Las Pavas</div>
+                            <div class="item-duration">Mirador y Santuario</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="03"
+                        data-name="San Pedro Perulapán"
+                        data-description="Un municipio con importancia histórica por la Batalla de San Pedro Perulapán. Conserva un ambiente tranquilo y colonial, ideal para conocer la historia de la independencia."
+                        data-image="https://cdn-pro.elsalvador.com/wp-content/uploads/2025/08/Turismo-pena-el-caracol-perulapan-5.jpg"
+                        data-link="https://es.wikipedia.org/wiki/San_Pedro_Perulap%C3%A1n">
+                        <span class="item-number">03</span>
+                        <img src="https://cdn-pro.elsalvador.com/wp-content/uploads/2025/08/Turismo-pena-el-caracol-perulapan-5.jpg" alt="San Pedro Perulapán thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">San Pedro Perulapán</div>
+                            <div class="item-duration">Historia Local</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="04"
+                        data-name="Puente Colgante de Santa Cruz Michapa"
+                        data-description="Un pintoresco puente colgante sobre el río Jiboa que conecta comunidades. Es un destino popular para tomar fotografías y disfrutar de la naturaleza circundante."
+                        data-image="https://imgs.search.brave.com/mckCdu0Gl6tVYMkqXwMOcDzfGW-AUniOZXvHLngjY7U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lc2Nh/cGFkYXMubWV4aWNv/ZGVzY29ub2NpZG8u/Y29tLm14L3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzEwL1BV/RU5URS1DT0xHQU5U/RV9QQUhVQVRMQU5f/TURfb2suanBn"
+                        data-link="https://es.wikipedia.org/wiki/Santa_Cruz_Michapa">
+                        <span class="item-number">04</span>
+                        <img src="https://imgs.search.brave.com/mckCdu0Gl6tVYMkqXwMOcDzfGW-AUniOZXvHLngjY7U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lc2Nh/cGFkYXMubWV4aWNv/ZGVzY29ub2NpZG8u/Y29tLm14L3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzEwL1BV/RU5URS1DT0xHQU5U/RV9QQUhVQVRMQU5f/TURfb2suanBn" alt="Puente Colgante thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Pte. Colgante Michapa</div>
+                            <div class="item-duration">Vistas y Fotografía</div>
+                        </div>
+                    </div>
+
+                    <div class="list-item" 
+                        data-id="05"
+                        data-name="Sitio Histórico de Cuscatlán"
+                        data-description="Antiguo emplazamiento de la capital del Señorío de Cuscatlán. Si bien no hay grandes estructuras, es un lugar de profunda relevancia histórica sobre el origen precolombino del país."
+                        data-image="https://imgs.search.brave.com/F-BjyIDJvJi_Hlotywn6ZqO0NO7UdwvocFtpxw0ISCA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ndWFu/YWNvcy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMTIv/R1VBTkFDT1MtQU5U/SUdVTy1DVVNDQVRM/QU4tMy0xMDI0eDU3/Ni5qcGc"
+                        data-link="https://es.wikipedia.org/wiki/Se%C3%B1or%C3%ADo_de_Cuscatl%C3%A1n">
+                        <span class="item-number">05</span>
+                        <img src="https://imgs.search.brave.com/F-BjyIDJvJi_Hlotywn6ZqO0NO7UdwvocFtpxw0ISCA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ndWFu/YWNvcy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMTIv/R1VBTkFDT1MtQU5U/SUdVTy1DVVNDQVRM/QU4tMy0xMDI0eDU3/Ni5qcGc" alt="Ruinas Cuscatlán thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Sitio de Cuscatlán</div>
+                            <div class="item-duration">Historia Precolombina</div>
+                        </div>
+                    </div>
+                    <div class="list-item active" 
+                        data-id="06"
+                        data-name="Teatro de Cojutepeque"
+                        data-description="Ubicado en la cabecera departamental, es un edificio histórico con una arquitectura elegante que ha servido como centro cultural y artístico para la región por décadas."
+                        data-image="https://imgs.search.brave.com/hNM4bgwLx3m2yGhW00sFSAp-HY6dJtzd7sJz9DE2W-M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9vZmZs/b2FkbWVkaWEuZmV2/ZXJ1cC5jb20vY2Rt/eHNlY3JldGEuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzAxLzIxMDE0ODI2/L3Zhc2VsaW5hLW9i/cmFzLXRlYXRyby1q/dWxpby0yMDIzLmpw/Zw"
+                        data-link="https://es.wikipedia.org/wiki/Cojutepeque">
+                        <span class="item-number">06</span>
+                        <img src="https://imgs.search.brave.com/q9nAcMP0XatD36ZHPiJL9HgMsS1jihPKLnbdDevCuW0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb2p1/dGVwZXF1ZW5vdGlj/aWFzLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNS8wMy9p/bWdfMTIxMi53ZWJw/P3c9NzUw" alt="Teatro de Cojutepeque thumbnail">
+                        <div class="item-text">
+                            <div class="item-title">Teatro de Cojutepeque</div>
+                            <div class="item-duration">Cultura y Arte</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal de Contactos -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p><strong>Hospedaje recomendado:</strong> <span id="modalHotel"></span></p>
+    <p><strong>Teléfono:</strong> <span id="modalPhone"></span></p>
+    <p><strong>Dirección:</strong> <span id="modalAddress"></span></p>
+  </div>
+</div>
+    <script src="/JS/departamentos.js"></script>
+    <script src="/JS/cuscatlan-contactos.js"></script>
+</body>
+</html>
